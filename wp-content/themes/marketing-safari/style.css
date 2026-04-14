@@ -232,12 +232,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .text-intro-section p {
   font-family: 'Nunito Sans', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
-  font-size: clamp(18px, 2vw, 24px);
+  font-size: 25px;
   font-weight: 400;
-  line-height: 1.65;
+  line-height: 1.2;
   color: #000;
-  max-width: 1000px;
+  max-width: 760px;
 }
+.text-intro-section p + p { margin-top: 0; }
 
 /* =============================================
    INTRO SECTION
