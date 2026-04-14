@@ -101,7 +101,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: 100%;
   background: #000;
   z-index: 8;
-  clip-path: polygon(10.04% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10.04% 100%);
 }
 
 /* ── Logo: left 100.2/1920=5.22%, top 30/1080=2.78% ── */
