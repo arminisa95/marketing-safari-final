@@ -144,6 +144,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-style: italic;
   font-weight: 600;
   color: #77E7AC;
+  font-size: 1.25em;
+  line-height: 1.05;
 }
 
 /* Subtext */
@@ -167,13 +169,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   justify-content: center;
   width: 52px;
   height: 52px;
-  background: #FF7B29;
-  border-radius: 50%;
-  color: #fff;
   transition: transform 0.2s;
 }
 .hero-scroll-btn:hover { transform: translateY(3px); }
-.hero-scroll-btn svg { width: 22px; height: 22px; }
+.hero-scroll-btn img { width: 52px; height: 52px; }
 
 /* =============================================
    SHARED UTILITIES
