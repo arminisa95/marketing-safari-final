@@ -9,6 +9,7 @@ defined('ABSPATH') || exit;
 add_action('init', function() {
     if (isset($_GET['ms_reset']) && current_user_can('manage_options')) {
         delete_option('ms_v3_done');
+        delete_option('ms_v4_done');
     }
 });
 
@@ -18,7 +19,7 @@ add_action('init', 'ms_setup_elementor_page', 30);
    MAIN SETUP
    ────────────────────────────────────────────── */
 function ms_setup_elementor_page() {
-    if (get_option('ms_v3_done')) return;
+    if (get_option('ms_v4_done')) return;
     if (!class_exists('Elementor\Plugin'))   return;
     if (!is_user_logged_in())                return;
 
@@ -46,7 +47,7 @@ function ms_setup_elementor_page() {
     if (class_exists('\Elementor\Plugin')) {
         \Elementor\Plugin::$instance->files_manager->clear_cache();
     }
-    update_option('ms_v3_done', 1);
+    update_option('ms_v4_done', 1);
 }
 
 /* ──────────────────────────────────────────────
@@ -424,7 +425,30 @@ function ms_build_page($img) {
     ]),
 
     /* ═══════════════════════════════════════════════════
-       SECTION 9 — TEAM
+       SECTION 9 — CTA DARK
+       ═══════════════════════════════════════════════════ */
+    _section([
+        'background_background'       => 'classic',
+        'background_color'            => $black,
+        'background_image'            => ['url' => $img.'marketingsafari-slider-1-4.webp','id'=>0,'size'=>'full'],
+        'background_position'         => 'center center',
+        'background_repeat'           => 'no-repeat',
+        'background_size'             => 'cover',
+        'background_overlay_background' => 'classic',
+        'background_overlay_color'    => 'rgba(0,0,0,0.65)',
+        'padding'                     => _p(120,0,120,0),
+        'css_classes'                 => 'ms-cta-section',
+    ], [
+        _col(100, ['padding'=>_p(0,60,0,60),'content_position'=>'middle'], [
+            _heading('Auf geht\'s!', 'p', $green, 13, 600, 12, ['typography_text_transform'=>'uppercase','typography_letter_spacing'=>_fs(1.5),'_margin'=>_p(0,0,12,0)]),
+            _heading('Auf geht\'s zur <span style="color:'.$orange.';">Safari!</span>', 'h2', $white, 56, 800, 20),
+            _text('<p>Keine Ausreden mehr. Starte jetzt deine Marketing Safari und gewinne echte Kunden.</p>', 'rgba(255,255,255,0.8)', 18, 1.7, 40),
+            _btn('Kostenloses Erstgespräch →', '#kontakt', $orange, $white),
+        ]),
+    ]),
+
+    /* ═══════════════════════════════════════════════════
+       SECTION 10 — TEAM
        ═══════════════════════════════════════════════════ */
     _section([
         'background_background' => 'classic',
