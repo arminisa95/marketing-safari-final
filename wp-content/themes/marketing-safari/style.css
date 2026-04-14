@@ -116,15 +116,23 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: auto;
 }
 
-/* ── Nav pills: top 35.75/1080=3.31%, right 103.66/1920=5.4%
-      Instrument Serif 25px, border 1px solid #fff, border-radius 40px ── */
+/* ── Content overlay: same footprint as .hero-content-col but no clip-path ── */
+.hero-content-overlay {
+  position: absolute;
+  left: 41.1%;
+  top: 0;
+  width: 58.9%;
+  height: 100%;
+  z-index: 20;
+}
+
+/* ── Nav pills: top 35.75/1080=3.31%, right 103.66/1131=9.17% of overlay ── */
 .hero-nav {
   position: absolute;
   top: 3.31%;
-  right: 5.4%;
+  right: 9.17%;
   display: flex;
   gap: clamp(8px, 1.25vw, 24px);
-  z-index: 20;
 }
 .hero-nav-pill {
   display: flex;
@@ -143,19 +151,17 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .hero-nav-pill:hover { opacity: 0.7; }
 
-/* ── Heading: left 960/1920=50%, top 217.88/1080=20.18%
-      width 887.34/1920=46.2%, Gibson 94.51px=4.92vw, line-height 1 ── */
+/* ── Heading: left 170.88/1131=15.11% of overlay, top 20.18%, width 78.45% ── */
 .hero-heading {
   position: absolute;
-  left: 50%;
+  left: 15.11%;
   top: 20.18%;
-  width: 46.2%;
+  width: 78.45%;
   font-family: 'Gibson', sans-serif;
   font-size: clamp(26px, 4.92vw, 94px);
   font-weight: 400;
   line-height: 1;
   color: #fff;
-  z-index: 20;
 }
 /* "Marketing Dschungel" in Instrument Serif italic #77E7AC */
 .hero-heading em {
@@ -165,32 +171,29 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: #77E7AC;
 }
 
-/* ── Subtext: left 996.71/1920=51.91%, top 748/1080=69.26%
-      width 823.49/1920=42.89%, Gibson 35px=1.823vw ── */
+/* ── Subtext: left 207.59/1131=18.35% of overlay, top 69.26%, width 72.81% ── */
 .hero-subtext {
   position: absolute;
-  left: 51.91%;
+  left: 18.35%;
   top: 69.26%;
-  width: 42.89%;
+  width: 72.81%;
   font-family: 'Gibson', sans-serif;
   font-size: clamp(14px, 1.82vw, 35px);
   font-weight: 400;
   line-height: 1.14;
   letter-spacing: 0.05em;
   color: #fff;
-  z-index: 20;
 }
 
-/* ── Scroll arrow: left 93.79%, top 87.8% ── */
+/* ── Scroll arrow: left 89.44% of overlay, top 87.8% ── */
 .hero-scroll-btn {
   position: absolute;
-  left: 93.79%;
+  left: 89.44%;
   top: 87.8%;
   transform: translate(-50%, -50%);
   display: block;
   width: clamp(36px, 3.11vw, 60px);
   height: clamp(36px, 3.11vw, 60px);
-  z-index: 20;
   transition: transform 0.2s;
 }
 .hero-scroll-btn:hover { transform: translate(-50%, -50%) translateY(4px); }
@@ -250,17 +253,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    ============================================= */
 .text-intro-section {
   background: #fff;
-  padding: 100px 0 80px;
+  padding: 120px 0;
+}
+.text-intro-section .container {
+  max-width: 900px;
 }
 .text-intro-section p {
-  font-family: 'Gibson', 'Gill Sans', sans-serif;
-  font-size: 25px;
+  font-family: 'Gibson', sans-serif;
+  font-size: clamp(18px, 1.8vw, 28px);
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.5;
   color: #000;
-  max-width: 760px;
 }
-.text-intro-section p + p { margin-top: 0; }
+.text-intro-section p + p { margin-top: 1.2em; }
 
 /* =============================================
    INTRO SECTION
@@ -449,27 +454,120 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    ============================================= */
 @media (max-width: 1200px) {
   .container { padding: 0 40px; }
-  .hero-content-col { padding: 100px 60px 60px 60px; }
 }
 
-@media (max-width: 900px) {
-  .container { padding: 0 28px; }
-  .hero-section { height: auto; min-height: 100svh; flex-direction: column; }
-  .hero-green-bar { width: 100%; height: 40px; }
-  .hero-green-bar-text { writing-mode: initial; transform: none; letter-spacing: 0.12em; }
-  .hero-image-col { width: 100%; height: 60vw; min-height: 280px; clip-path: none; }
-  .hero-logo-overlay { top: 16px; left: 16px; }
-  .hero-logo-overlay img { height: 40px; }
-  .hero-content-col { padding: 60px 28px 80px; }
-  .hero-nav { position: static; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; justify-content: flex-start; }
-  .hero-scroll { bottom: 24px; right: 24px; }
-  .intro-grid, .about-grid, .team-grid { grid-template-columns: 1fr; gap: 40px; }
-  .services-grid { grid-template-columns: 1fr; }
-  .booking-card { grid-template-columns: 1fr; padding: 40px 28px; gap: 32px; }
-  .form-row { grid-template-columns: 1fr; }
-  .impressions-grid { grid-template-columns: 1fr 1fr; }
-  .gallery-grid { grid-template-columns: 1fr 1fr; }
-  .step-inner { padding: 20px 28px; }
+/* ── Tablet: 769–1024px — layout holds, fonts scale via vw ── */
+@media (max-width: 1024px) {
+  .hero-nav-pill { font-size: clamp(11px, 1.1vw, 20px); padding: 4px 14px; }
+  .text-intro-section { padding: 80px 0; }
+}
+
+/* ── Mobile: ≤768px — stack hero vertically ── */
+@media (max-width: 768px) {
+  .container { padding: 0 20px; }
+
+  /* Hero: switch from absolute to column flow */
+  .hero-section {
+    height: auto;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Green bar: thin horizontal strip */
+  .hero-green-bar {
+    position: relative;
+    left: auto; top: auto;
+    width: 100%;
+    height: 36px;
+    min-width: auto;
+  }
+  .hero-green-bar-text {
+    transform: none;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+  }
+
+  /* Photo: full width, fixed height */
+  .hero-img {
+    position: relative;
+    left: auto; top: auto;
+    width: 100%;
+    height: 65vw;
+    max-height: 380px;
+    flex-shrink: 0;
+  }
+
+  /* Black bg panel: hidden on mobile (overlay provides bg) */
+  .hero-content-col { display: none; }
+
+  /* Content overlay: flows below photo */
+  .hero-content-overlay {
+    position: relative;
+    left: auto; top: auto;
+    width: 100%;
+    height: auto;
+    background: #000;
+    padding: 28px 20px 48px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Logo: over the photo */
+  .hero-logo {
+    position: absolute;
+    left: 16px;
+    top: 36px;
+  }
+  .hero-logo img { width: 100px; }
+
+  /* Nav: flow at top of content overlay */
+  .hero-nav {
+    position: relative;
+    top: auto; right: auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 24px;
+    order: 1;
+  }
+  .hero-nav-pill { font-size: 15px; }
+
+  /* Heading */
+  .hero-heading {
+    position: relative;
+    left: auto; top: auto;
+    width: 100%;
+    font-size: clamp(28px, 8vw, 52px);
+    line-height: 1.1;
+    margin-bottom: 20px;
+    order: 2;
+  }
+
+  /* Subtext */
+  .hero-subtext {
+    position: relative;
+    left: auto; top: auto;
+    width: 100%;
+    font-size: clamp(15px, 4vw, 22px);
+    order: 3;
+  }
+
+  /* Scroll btn */
+  .hero-scroll-btn {
+    position: relative;
+    left: auto; top: auto;
+    transform: none;
+    align-self: flex-end;
+    margin-top: 28px;
+    order: 4;
+  }
+  .hero-scroll-btn:hover { transform: translateY(4px); }
+
+  /* Text intro */
+  .text-intro-section { padding: 60px 0; }
+  .text-intro-section .container { max-width: 100%; }
+  .text-intro-section p { font-size: clamp(16px, 4.5vw, 22px); }
 }
 
 @media (max-width: 600px) {

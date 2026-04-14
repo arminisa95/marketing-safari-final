@@ -14,38 +14,39 @@
   <!-- Hero photo: left 2.43%, width 43.57% -->
   <img src="<?php echo $img; ?>hero-person.png" alt="" class="hero-img">
 
-  <!-- Black content panel: left 41.1%, 6° diagonal clip -->
+  <!-- Black panel bg (clip-path diagonal, visual only) -->
   <div class="hero-content-col"></div>
 
-  <!-- Logo: left 5.22%, top 2.78% -->
+  <!-- Logo over the photo -->
   <div class="hero-logo">
     <img src="<?php echo $img; ?>hero-logo.png" alt="Marketing Safari">
   </div>
 
-  <!-- Nav pills: top 3.31%, right-aligned -->
-  <nav class="hero-nav" aria-label="Navigation">
-    <a href="#leistungen" class="hero-nav-pill">Unsere Coachings</a>
-    <a href="#safari"     class="hero-nav-pill">So funktioniert's</a>
-    <a href="#kontakt"    class="hero-nav-pill">Anfrage senden</a>
-  </nav>
+  <!-- Content overlay: same footprint as black panel, no clip, holds all text -->
+  <div class="hero-content-overlay">
 
-  <!-- Heading: left 50%, top 20.18%, font 94px -->
-  <h1 class="hero-heading">
-    Einfach selbstständig<br>
-    durch den <em>Marketing<br>
-    Dschungel</em> navigieren
-  </h1>
+    <nav class="hero-nav" aria-label="Navigation">
+      <a href="#leistungen" class="hero-nav-pill">Unsere Coachings</a>
+      <a href="#safari"     class="hero-nav-pill">So funktioniert's</a>
+      <a href="#kontakt"    class="hero-nav-pill">Anfrage senden</a>
+    </nav>
 
-  <!-- Subtext: left 51.91%, top 69.26%, font 35px -->
-  <p class="hero-subtext">
-    Marketing Safari ist ein Coaching Programm für Unternehmen und Marken die sichtbar werden,
-    Reichweite aufbauen und konstant Kunden gewinnen wollen – ohne Agenturabhängigkeit.
-  </p>
+    <h1 class="hero-heading">
+      Einfach selbstständig<br>
+      durch den <em>Marketing<br>
+      Dschungel</em> navigieren
+    </h1>
 
-  <!-- Scroll arrow: left 93.79%, top 87.8% -->
-  <a href="#intro" class="hero-scroll-btn" aria-label="Nach unten scrollen">
-    <img src="<?php echo $img; ?>marketingsafari-pfeil-icon-orange.svg" alt="">
-  </a>
+    <p class="hero-subtext">
+      Marketing Safari ist ein Coaching Programm für Unternehmen und Marken die sichtbar werden,
+      Reichweite aufbauen und konstant Kunden gewinnen wollen – ohne Agenturabhängigkeit.
+    </p>
+
+    <a href="#intro" class="hero-scroll-btn" aria-label="Nach unten scrollen">
+      <img src="<?php echo $img; ?>marketingsafari-pfeil-icon-orange.svg" alt="">
+    </a>
+
+  </div>
 
 </section>
 
