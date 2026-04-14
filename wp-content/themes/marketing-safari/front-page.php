@@ -2,47 +2,40 @@
 <?php $img = get_template_directory_uri() . '/images/'; ?>
 
 <!-- ══════════════════════════════════════════
-     HERO — pixel-perfect Figma match
+     HERO
      ══════════════════════════════════════════ -->
 <section class="hero-section" id="hero">
 
-  <!-- Turquoise bar far left with "by plappermaul" -->
   <div class="hero-green-bar">
     <span class="hero-green-bar-text">by plappermaul</span>
   </div>
 
-  <!-- Left: image column with logo overlay -->
   <div class="hero-image-col">
     <img src="<?php echo $img; ?>hero-person.png" alt="Marketing Safari" class="hero-img">
     <div class="hero-logo-overlay">
-      <img src="<?php echo $img; ?>hero-logo.png" alt="Marketing Safari Logo">
+      <img src="<?php echo $img; ?>hero-logo.png" alt="Marketing Safari">
     </div>
   </div>
 
-  <!-- Right: black content column -->
   <div class="hero-content-col">
 
-    <!-- Navigation pills top right -->
-    <nav class="hero-nav" aria-label="Hauptnavigation">
+    <nav class="hero-nav" aria-label="Navigation">
       <a href="#leistungen" class="hero-nav-pill">Unsere Coachings</a>
       <a href="#safari"     class="hero-nav-pill">So funktioniert's</a>
       <a href="#kontakt"    class="hero-nav-pill">Anfrage senden</a>
     </nav>
 
-    <!-- Main heading -->
     <h1 class="hero-heading">
       Einfach selbstständig<br>
       durch den <em>Marketing<br>
       Dschungel</em> navigieren
     </h1>
 
-    <!-- Sub-text -->
     <p class="hero-subtext">
       Marketing Safari ist ein Coaching Programm für Unternehmen und Marken die sichtbar werden,
       Reichweite aufbauen und konstant Kunden gewinnen wollen – ohne Agenturabhängigkeit.
     </p>
 
-    <!-- Orange scroll-down circle -->
     <div class="hero-scroll">
       <a href="#intro" class="hero-scroll-btn" aria-label="Nach unten scrollen">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -54,15 +47,17 @@
   </div>
 </section>
 
-<!-- INTRO: Zwei Safaris -->
+<!-- ══════════════════════════════════════════
+     INTRO
+     ══════════════════════════════════════════ -->
 <section class="intro-section" id="intro">
   <div class="container intro-grid">
     <div class="intro-text">
-      <p class="section-overtitle">Was wir tun</p>
+      <span class="section-overtitle">Was wir tun</span>
       <h2>Zwei Safaris.<br><em>Ein Ziel.</em></h2>
-      <p>Marketing Safari steht für klare Strategie, ehrliche Kommunikation und messbare Ergebnisse. Wir bieten zwei spezialisierte Pakete, die perfekt auf deine Bedürfnisse zugeschnitten sind – von der Online-Marketing-Strategie bis zur professionellen Content-Produktion.</p>
+      <p>Marketing Safari steht für klare Strategie, ehrliche Kommunikation und messbare Ergebnisse. Wir bieten zwei spezialisierte Programme, die perfekt auf deine Bedürfnisse zugeschnitten sind.</p>
       <p>Kein Schnickschnack. Keine leeren Versprechen. Nur echtes, nachhaltiges Wachstum für dein Business.</p>
-      <a href="#leistungen" class="btn-primary">Safaris entdecken <img src="<?php echo $img; ?>marketingsafari-pfeil-icon-orange.svg" alt="" class="btn-arrow"></a>
+      <a href="#leistungen" class="btn-primary">Safaris entdecken <img src="<?php echo $img; ?>marketingsafari-pfeil-icon-orange.svg" alt=""></a>
     </div>
     <div class="intro-media">
       <img src="<?php echo $img; ?>marketingsafari-meeting.webp" alt="Marketing Safari Team" class="intro-img">
@@ -70,12 +65,15 @@
   </div>
 </section>
 
-<!-- SERVICES (dark) -->
+<!-- ══════════════════════════════════════════
+     LEISTUNGEN (dark)
+     ══════════════════════════════════════════ -->
 <section class="services-section" id="leistungen">
   <div class="container">
-    <p class="section-overtitle green">Unsere Leistungen</p>
-    <h2 class="white">Deine Safari beginnt hier</h2>
+    <span class="section-overtitle green">Unsere Leistungen</span>
+    <h2>Deine Safari beginnt hier</h2>
     <div class="services-grid">
+
       <div class="service-card">
         <img src="<?php echo $img; ?>marketingsafari-icon-onlinemarketingsafari.svg" alt="" class="service-icon">
         <h3>Online Marketing Safari</h3>
@@ -88,11 +86,12 @@
           <li><img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-gruen.svg" alt="">Analytics &amp; Reporting</li>
         </ul>
       </div>
+
       <div class="service-card">
         <img src="<?php echo $img; ?>marketingsafari-icon-contentcreationsafari.svg" alt="" class="service-icon">
         <h3>Content Creation Safari</h3>
         <p>Professioneller Content, der deine Marke zum Leben erweckt – von der Idee bis zur Veröffentlichung.</p>
-        <ul class="check-list orange">
+        <ul class="check-list">
           <li><img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-orange.svg" alt="">Foto &amp; Video Produktion</li>
           <li><img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-orange.svg" alt="">Social Media Content</li>
           <li><img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-orange.svg" alt="">Blog &amp; Textproduktion</li>
@@ -100,31 +99,64 @@
           <li><img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-orange.svg" alt="">Reels &amp; Stories</li>
         </ul>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- PROCESS -->
+<!-- ══════════════════════════════════════════
+     PROZESS
+     ══════════════════════════════════════════ -->
 <section class="process-section" id="safari">
   <div class="container process-header-row">
-    <div>
-      <p class="section-overtitle orange">Der Prozess</p>
-      <h2>So findet deine <em>Safari statt.</em></h2>
-    </div>
+    <span class="section-overtitle">Der Prozess</span>
+    <h2>So findet deine <em>Safari statt.</em></h2>
   </div>
   <div class="process-steps">
-    <div class="process-step"><div class="step-inner"><img src="<?php echo $img; ?>marketingsafari-icon-nummer-1.svg" alt="1" width="58" height="57"><div class="step-text"><h3>Kennenlernen &amp; Analyse</h3><p>Wir lernen dein Business kennen, analysieren den Markt und definieren gemeinsam deine Ziele.</p></div></div><div class="step-bar" style="background:#FFEF5F"></div></div>
-    <div class="process-step"><div class="step-inner"><img src="<?php echo $img; ?>marketingsafari-icon-nummer-2.svg" alt="2" width="58" height="57"><div class="step-text"><h3>Strategie entwickeln</h3><p>Basierend auf den Erkenntnissen entwickeln wir eine maßgeschneiderte Marketing-Strategie.</p></div></div><div class="step-bar" style="background:#77E7AC"></div></div>
-    <div class="process-step"><div class="step-inner"><img src="<?php echo $img; ?>marketingsafari-icon-nummer-3.svg" alt="3" width="58" height="57"><div class="step-text"><h3>Umsetzung starten</h3><p>Wir setzen die Strategie konsequent und kreativ um – schnell, präzise und auf den Punkt.</p></div></div><div class="step-bar" style="background:#FF7B29"></div></div>
-    <div class="process-step"><div class="step-inner"><img src="<?php echo $img; ?>marketingsafari-icon-nummer-4.svg" alt="4" width="58" height="57"><div class="step-text"><h3>Optimieren &amp; Skalieren</h3><p>Kontinuierliches Monitoring und datenbasierte Optimierung für maximale Performance.</p></div></div><div class="step-bar" style="background:#C29AFF"></div></div>
-    <div class="process-step"><div class="step-inner"><img src="<?php echo $img; ?>marketingsafari-icon-nummer-5.svg" alt="5" width="58" height="57"><div class="step-text"><h3>Erfolg messen</h3><p>Transparentes Reporting und klare KPIs zeigen dir, was dein Marketing-Investment bringt.</p></div></div><div class="step-bar" style="background:#71E7FF"></div></div>
+    <div class="process-step">
+      <div class="step-inner">
+        <img src="<?php echo $img; ?>marketingsafari-icon-nummer-1.svg" alt="1" width="58" height="57">
+        <div class="step-text"><h3>Kennenlernen &amp; Analyse</h3><p>Wir lernen dein Business kennen, analysieren den Markt und definieren gemeinsam deine Ziele.</p></div>
+      </div>
+      <div class="step-bar" style="background:#FFEF5F"></div>
+    </div>
+    <div class="process-step">
+      <div class="step-inner">
+        <img src="<?php echo $img; ?>marketingsafari-icon-nummer-2.svg" alt="2" width="58" height="57">
+        <div class="step-text"><h3>Strategie entwickeln</h3><p>Basierend auf den Erkenntnissen entwickeln wir eine maßgeschneiderte Marketing-Strategie.</p></div>
+      </div>
+      <div class="step-bar" style="background:#77E7AC"></div>
+    </div>
+    <div class="process-step">
+      <div class="step-inner">
+        <img src="<?php echo $img; ?>marketingsafari-icon-nummer-3.svg" alt="3" width="58" height="57">
+        <div class="step-text"><h3>Umsetzung starten</h3><p>Wir setzen die Strategie konsequent und kreativ um – schnell, präzise und auf den Punkt.</p></div>
+      </div>
+      <div class="step-bar" style="background:#FF7B29"></div>
+    </div>
+    <div class="process-step">
+      <div class="step-inner">
+        <img src="<?php echo $img; ?>marketingsafari-icon-nummer-4.svg" alt="4" width="58" height="57">
+        <div class="step-text"><h3>Optimieren &amp; Skalieren</h3><p>Kontinuierliches Monitoring und datenbasierte Optimierung für maximale Performance.</p></div>
+      </div>
+      <div class="step-bar" style="background:#C29AFF"></div>
+    </div>
+    <div class="process-step">
+      <div class="step-inner">
+        <img src="<?php echo $img; ?>marketingsafari-icon-nummer-5.svg" alt="5" width="58" height="57">
+        <div class="step-text"><h3>Erfolg messen</h3><p>Transparentes Reporting und klare KPIs zeigen dir, was dein Investment bringt.</p></div>
+      </div>
+      <div class="step-bar" style="background:#71E7FF"></div>
+    </div>
   </div>
 </section>
 
-<!-- IMPRESSIONS -->
+<!-- ══════════════════════════════════════════
+     IMPRESSIONEN
+     ══════════════════════════════════════════ -->
 <section class="impressions-section">
   <div class="container">
-    <p class="section-overtitle orange">Einblicke</p>
+    <span class="section-overtitle">Einblicke</span>
     <h2>Impressionen</h2>
     <div class="impressions-grid">
       <img src="<?php echo $img; ?>marketingsafari-slider-1-1.webp" alt="">
@@ -134,9 +166,12 @@
   </div>
 </section>
 
-<!-- ONLINE MARKETING SAFARI (orange form) -->
+<!-- ══════════════════════════════════════════
+     ANFRAGE / KONTAKT
+     ══════════════════════════════════════════ -->
 <section class="booking-section" id="kontakt">
   <div class="container">
+
     <div class="booking-card booking-orange">
       <div class="booking-text">
         <h2>Online Marketing Safari anfragen</h2>
@@ -148,16 +183,18 @@
         </ul>
       </div>
       <form class="booking-form" method="post">
-        <div class="form-row"><input type="text" placeholder="Vorname"><input type="text" placeholder="Nachname"></div>
-        <input type="email" placeholder="E-Mail Adresse">
-        <input type="tel" placeholder="Telefon">
-        <input type="text" placeholder="Unternehmen">
-        <textarea rows="4" placeholder="Deine Nachricht..."></textarea>
+        <div class="form-row">
+          <input type="text" name="vorname" placeholder="Vorname">
+          <input type="text" name="nachname" placeholder="Nachname">
+        </div>
+        <input type="email" name="email" placeholder="E-Mail Adresse">
+        <input type="tel" name="telefon" placeholder="Telefon">
+        <input type="text" name="unternehmen" placeholder="Unternehmen">
+        <textarea name="nachricht" rows="4" placeholder="Deine Nachricht..."></textarea>
         <button type="submit" class="btn-book">Safari anfragen →</button>
       </form>
     </div>
 
-    <!-- CONTENT CREATION SAFARI (green form) -->
     <div class="booking-card booking-green">
       <div class="booking-text">
         <h2>Content Creation Safari anfragen</h2>
@@ -169,26 +206,32 @@
         </ul>
       </div>
       <form class="booking-form" method="post">
-        <div class="form-row"><input type="text" placeholder="Vorname"><input type="text" placeholder="Nachname"></div>
-        <input type="email" placeholder="E-Mail Adresse">
-        <input type="tel" placeholder="Telefon">
-        <input type="text" placeholder="Unternehmen">
-        <textarea rows="4" placeholder="Beschreibe deinen Content-Bedarf..."></textarea>
+        <div class="form-row">
+          <input type="text" name="vorname" placeholder="Vorname">
+          <input type="text" name="nachname" placeholder="Nachname">
+        </div>
+        <input type="email" name="email" placeholder="E-Mail Adresse">
+        <input type="tel" name="telefon" placeholder="Telefon">
+        <input type="text" name="unternehmen" placeholder="Unternehmen">
+        <textarea name="nachricht" rows="4" placeholder="Beschreibe deinen Content-Bedarf..."></textarea>
         <button type="submit" class="btn-book">Content anfragen →</button>
       </form>
     </div>
+
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ══════════════════════════════════════════
+     ÜBER MARKETING SAFARI
+     ══════════════════════════════════════════ -->
 <section class="about-section">
   <div class="container about-grid">
     <div class="about-text">
-      <p class="section-overtitle orange">Über Marketing Safari</p>
+      <span class="section-overtitle">Über Marketing Safari</span>
       <h2>Herzlich <em>Willkommen!</em></h2>
       <p>Marketing Safari ist deine Agentur für ehrliches, effektives und kreatives Marketing. Wir glauben daran, dass erfolgreiches Marketing auf echten Beziehungen und echtem Mehrwert basiert.</p>
       <p>Als spezialisierte Boutique-Agentur bieten wir persönliche Betreuung, direkte Kommunikation und Strategien, die wirklich funktionieren.</p>
-      <a href="#kontakt" class="btn-primary">Jetzt starten <img src="<?php echo $img; ?>marketingsafari-pfeil-icon-orange.svg" alt="" class="btn-arrow"></a>
+      <a href="#kontakt" class="btn-primary">Jetzt starten <img src="<?php echo $img; ?>marketingsafari-pfeil-icon-orange.svg" alt=""></a>
     </div>
     <div class="about-media">
       <img src="<?php echo $img; ?>marketingsafari-meeting.webp" alt="Marketing Safari">
@@ -196,25 +239,31 @@
   </div>
 </section>
 
-<!-- CTA DARK -->
+<!-- ══════════════════════════════════════════
+     CTA DARK
+     ══════════════════════════════════════════ -->
 <section class="cta-section">
   <div class="cta-bg-img"><img src="<?php echo $img; ?>marketingsafari-slider-1-4.webp" alt=""></div>
-  <div class="container cta-inner">
-    <p class="section-overtitle green">Auf geht's!</p>
-    <h2>Auf geht's zur <em class="orange">Safari!</em></h2>
-    <p>Keine Ausreden mehr. Starte jetzt deine Marketing Safari.</p>
-    <a href="#kontakt" class="btn-primary">Kostenloses Erstgespräch <img src="<?php echo $img; ?>marketingsafari-pfeil-icon.svg" alt="" class="btn-arrow-dark"></a>
+  <div class="container">
+    <div class="cta-inner">
+      <span class="section-overtitle green">Auf geht's!</span>
+      <h2>Auf geht's zur <em class="orange">Safari!</em></h2>
+      <p>Keine Ausreden mehr. Starte jetzt deine Marketing Safari.</p>
+      <a href="#kontakt" class="btn-primary">Kostenloses Erstgespräch <img src="<?php echo $img; ?>marketingsafari-pfeil-icon.svg" alt=""></a>
+    </div>
   </div>
 </section>
 
-<!-- ÜBER MICH -->
+<!-- ══════════════════════════════════════════
+     ÜBER MICH
+     ══════════════════════════════════════════ -->
 <section class="team-section" id="ueber-mich">
   <div class="container team-grid">
     <div class="team-media">
       <img src="<?php echo $img; ?>marketingsafari-slider-1-5.webp" alt="Marketing Safari Team">
     </div>
     <div class="team-text">
-      <p class="section-overtitle orange">Über mich</p>
+      <span class="section-overtitle">Über mich</span>
       <h2>Dein Partner für <em>echtes Marketing.</em></h2>
       <p>Ich bin leidenschaftlicher Marketeer mit jahrelanger Erfahrung in digitalen Strategien, Content-Produktion und Performance-Marketing.</p>
       <p>Datengetrieben, kreativ und immer mit dem Ziel, echte Ergebnisse zu liefern. Keine Spielereien, keine leeren Versprechen.</p>
@@ -222,10 +271,12 @@
   </div>
 </section>
 
-<!-- REFERENCES / GALLERY -->
+<!-- ══════════════════════════════════════════
+     REFERENZEN
+     ══════════════════════════════════════════ -->
 <section class="gallery-section">
   <div class="container">
-    <p class="section-overtitle orange">Referenzen</p>
+    <span class="section-overtitle">Referenzen</span>
     <h2>Unsere Arbeit</h2>
     <div class="gallery-grid">
       <div class="gallery-item">
