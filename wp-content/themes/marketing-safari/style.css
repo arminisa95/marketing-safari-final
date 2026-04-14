@@ -41,151 +41,160 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* =============================================
-   HERO SECTION
+   HERO SECTION — pixel-accurate from Figma 1920×1080
+   All positions as % of 1920 (horizontal) / 1080 (vertical)
    ============================================= */
 .hero-section {
   position: relative;
   width: 100%;
   height: 100vh;
-  min-height: 700px;
+  min-height: 600px;
   background: #000;
-  display: flex;
   overflow: hidden;
 }
 
-/* Green column — 50% of viewport */
+/* ── Green bar: width 48.59/1920 = 2.53% ── */
 .hero-green-bar {
-  width: 50%;
-  flex-shrink: 0;
+  position: absolute;
+  left: 0; top: 0;
+  width: 2.53%;
+  min-width: 32px;
   height: 100%;
   background: #77E7AC;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+/* "by plappermaul": Gibson 25px, rotated */
 .hero-green-bar-text {
-  display: block;
-  font-family: 'Gibson', 'Gill Sans', sans-serif;
-  font-size: 14px;
+  font-family: 'Gibson', sans-serif;
+  font-size: clamp(11px, 1.3vw, 25px);
   font-weight: 400;
-  letter-spacing: 5px;
+  letter-spacing: 0.05em;
   color: #000;
   white-space: nowrap;
   transform: rotate(-90deg);
 }
 
-/* Right side wrapper — 50% */
-.hero-right {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-/* Image column — 45% of hero-right */
-.hero-image-col {
-  position: relative;
-  width: 45%;
-  flex-shrink: 0;
-  height: 100%;
-}
+/* ── Hero photo: left 2.43%, width 43.57% ── */
 .hero-img {
-  width: 100%;
+  position: absolute;
+  left: 2.43%;
+  top: 0;
+  width: 43.57%;
   height: 100%;
   object-fit: cover;
   object-position: center top;
-}
-.hero-logo-overlay {
-  position: absolute;
-  top: 30px;
-  left: 53px;
-  z-index: 30;
-}
-.hero-logo-overlay img {
-  height: 58px;
-  width: auto;
+  display: block;
+  z-index: 5;
 }
 
-/* Black content column — 55% of hero-right */
+/* ── Black content panel: left 41.1%, width 58.9%
+      6° diagonal left edge via clip-path
+      tan(6°)×1080 = 113.5px → 113.5/1130.8 = 10.04% of element width ── */
 .hero-content-col {
-  position: relative;
-  width: 55%;
+  position: absolute;
+  left: 41.1%;
+  top: 0;
+  width: 58.9%;
   height: 100%;
   background: #000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 60px;
-  overflow: hidden;
+  z-index: 8;
+  clip-path: polygon(10.04% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-/* Nav pills top right */
+/* ── Logo: left 100.2/1920=5.22%, top 30/1080=2.78% ── */
+.hero-logo {
+  position: absolute;
+  left: 5.22%;
+  top: 2.78%;
+  z-index: 20;
+}
+.hero-logo img {
+  width: clamp(80px, 8.77vw, 168px);
+  height: auto;
+}
+
+/* ── Nav pills: top 35.75/1080=3.31%, right 103.66/1920=5.4%
+      Instrument Serif 25px, border 1px solid #fff, border-radius 40px ── */
 .hero-nav {
   position: absolute;
-  top: 42px;
-  left: 60px; right: 60px;
+  top: 3.31%;
+  right: 5.4%;
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  gap: 10px;
+  gap: clamp(8px, 1.25vw, 24px);
+  z-index: 20;
 }
 .hero-nav-pill {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 5px 18px;
   border: 1px solid #fff;
   border-radius: 40px;
   font-family: 'Instrument Serif', Georgia, serif;
-  font-size: 20px;
+  font-size: clamp(12px, 1.3vw, 25px);
   font-weight: 400;
+  line-height: 1.28;
   color: #fff;
   white-space: nowrap;
-  transition: border-color 0.2s, opacity 0.2s;
+  transition: opacity 0.2s;
 }
-.hero-nav-pill:hover { opacity: 0.75; }
+.hero-nav-pill:hover { opacity: 0.7; }
 
-/* Heading */
+/* ── Heading: left 960/1920=50%, top 217.88/1080=20.18%
+      width 887.34/1920=46.2%, Gibson 94.51px=4.92vw, line-height 1 ── */
 .hero-heading {
-  font-family: 'Gibson', 'Gill Sans', sans-serif;
-  font-size: clamp(22px, 2.7vw, 70px);
+  position: absolute;
+  left: 50%;
+  top: 20.18%;
+  width: 46.2%;
+  font-family: 'Gibson', sans-serif;
+  font-size: clamp(26px, 4.92vw, 94px);
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1;
   color: #fff;
-  margin-bottom: 28px;
-  overflow-wrap: break-word;
-  word-break: break-word;
+  z-index: 20;
 }
+/* "Marketing Dschungel" in Instrument Serif italic #77E7AC */
 .hero-heading em {
-  font-family: 'Gibson', 'Gill Sans', sans-serif;
+  font-family: 'Instrument Serif', Georgia, serif;
   font-style: italic;
   font-weight: 400;
   color: #77E7AC;
 }
 
-/* Subtext */
+/* ── Subtext: left 996.71/1920=51.91%, top 748/1080=69.26%
+      width 823.49/1920=42.89%, Gibson 35px=1.823vw ── */
 .hero-subtext {
-  font-family: 'Gibson', 'Gill Sans', sans-serif;
-  font-size: clamp(14px, 1.4vw, 35px);
+  position: absolute;
+  left: 51.91%;
+  top: 69.26%;
+  width: 42.89%;
+  font-family: 'Gibson', sans-serif;
+  font-size: clamp(14px, 1.82vw, 35px);
   font-weight: 400;
   line-height: 1.14;
+  letter-spacing: 0.05em;
   color: #fff;
+  z-index: 20;
 }
 
-/* Orange scroll circle */
-.hero-scroll {
-  position: absolute;
-  bottom: 56px;
-  right: 64px;
-}
+/* ── Scroll arrow: left 93.79%, top 87.8% ── */
 .hero-scroll-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 52px;
-  height: 52px;
+  position: absolute;
+  left: 93.79%;
+  top: 87.8%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: clamp(36px, 3.11vw, 60px);
+  height: clamp(36px, 3.11vw, 60px);
+  z-index: 20;
   transition: transform 0.2s;
 }
-.hero-scroll-btn:hover { transform: translateY(3px); }
-.hero-scroll-btn img { width: 52px; height: 52px; }
+.hero-scroll-btn:hover { transform: translate(-50%, -50%) translateY(4px); }
+.hero-scroll-btn img { width: 100%; height: 100%; }
 
 /* =============================================
    SHARED UTILITIES
