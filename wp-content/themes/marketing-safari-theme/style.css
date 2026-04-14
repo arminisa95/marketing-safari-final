@@ -954,3 +954,98 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .footer-top { grid-template-columns: 1fr; }
   .hero-btns { flex-direction: column; }
 }
+
+/* ============================================================
+   ELEMENTOR OVERRIDES — pixel-perfect helpers
+   ============================================================ */
+
+/* Remove default Elementor spacing */
+.elementor-section .elementor-container { max-width: 1200px; }
+.elementor-element { --e-col-padding-left: 0; --e-col-padding-right: 0; }
+
+/* ── HERO ── */
+.ms-hero-section .elementor-container {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+.ms-hero-section.elementor-section { min-height: 100vh; }
+.ms-hero-section > .elementor-container > .elementor-row,
+.ms-hero-section > .elementor-container { align-items: stretch; height: 100vh; }
+
+/* Image column: diagonal clip + green strip */
+.ms-hero-image-col.elementor-column {
+  position: relative;
+  overflow: visible !important;
+  clip-path: polygon(0 0, 88% 0, 100% 100%, 0 100%);
+  flex-shrink: 0;
+}
+.ms-hero-image-col.elementor-column::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 46px; height: 100%;
+  background: #77E7AC;
+  z-index: 10;
+}
+.ms-hero-image-col .elementor-widget-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+.ms-hero-image-col .elementor-widget-wrap {
+  height: 100%;
+  padding: 0 !important;
+}
+.ms-hero-image-col .elementor-widget-image { height: 100%; }
+.ms-hero-image-col .elementor-widget-image .elementor-widget-container { height: 100%; }
+
+/* Content column */
+.ms-hero-content-col.elementor-column > .elementor-widget-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+/* ── SERVICE CARDS ── */
+.ms-service-card > .elementor-widget-wrap {
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 25px;
+  padding: 48px 44px !important;
+  transition: border-color 0.3s;
+}
+.ms-service-card > .elementor-widget-wrap:hover {
+  border-color: rgba(255,255,255,0.5);
+}
+
+/* ── PROCESS STEPS ── */
+.ms-process-step.elementor-section {
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  min-height: 94px;
+}
+.ms-process-step .elementor-container {
+  max-width: 100% !important;
+  padding: 0 !important;
+  align-items: stretch;
+}
+.ms-step-color-bar > .elementor-widget-wrap {
+  padding: 0 !important;
+  height: 100%;
+  min-height: 94px;
+}
+
+/* ── BOOKING CARDS ── */
+.ms-booking-orange .elementor-inner-section,
+.ms-booking-green  .elementor-inner-section {
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+/* ── GLOBAL ELEMENTOR TWEAKS ── */
+.elementor-widget-heading .elementor-heading-title { line-height: 1.15; }
+.elementor-widget-text-editor { line-height: 1.7; }
+.elementor-button { transition: transform 0.2s, box-shadow 0.2s; }
+.elementor-button:hover { transform: translateY(-2px); }
