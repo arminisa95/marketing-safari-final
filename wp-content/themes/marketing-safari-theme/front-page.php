@@ -1,28 +1,61 @@
 <?php get_header(); ?>
 <?php $img = get_template_directory_uri() . '/images/'; ?>
 
-<!-- HERO -->
+<!-- ══════════════════════════════════════════
+     HERO — pixel-perfect Figma match
+     ══════════════════════════════════════════ -->
 <section class="hero-section" id="hero">
-  <div class="hero-image-col">
-    <img src="<?php echo $img; ?>marketingsafari-hero-bild.webp" alt="Marketing Safari" width="836" height="1080">
+
+  <!-- Turquoise bar far left with "by plappermaul" -->
+  <div class="hero-green-bar">
+    <span class="hero-green-bar-text">by plappermaul</span>
   </div>
+
+  <!-- Left: image column with logo overlay -->
+  <div class="hero-image-col">
+    <img src="<?php echo $img; ?>hero-person.png" alt="Marketing Safari" class="hero-img">
+    <div class="hero-logo-overlay">
+      <img src="<?php echo $img; ?>hero-logo.png" alt="Marketing Safari Logo">
+    </div>
+  </div>
+
+  <!-- Right: black content column -->
   <div class="hero-content-col">
-    <p class="hero-tag">Marketing Agentur</p>
-    <h1 class="hero-heading">Marketing, das seinen Weg kennt. <em>Wir jagen keine Likes. Wir gewinnen Kunden.</em></h1>
-    <div class="hero-btns">
-      <a href="#kontakt" class="btn-primary">Kostenloses Erstgespräch <img src="<?php echo $img; ?>marketingsafari-pfeil-icon.svg" alt="" class="btn-arrow-dark"></a>
-      <a href="#leistungen" class="btn-outline">Leistungen entdecken</a>
+
+    <!-- Navigation pills top right -->
+    <nav class="hero-nav" aria-label="Hauptnavigation">
+      <a href="#leistungen" class="hero-nav-pill">Unsere Coachings</a>
+      <a href="#safari"     class="hero-nav-pill">So funktioniert's</a>
+      <a href="#kontakt"    class="hero-nav-pill">Anfrage senden</a>
+    </nav>
+
+    <!-- Main heading -->
+    <h1 class="hero-heading">
+      Einfach selbstständig<br>
+      durch den <em>Marketing<br>
+      Dschungel</em> navigieren
+    </h1>
+
+    <!-- Sub-text -->
+    <p class="hero-subtext">
+      Marketing Safari ist ein Coaching Programm für Unternehmen und Marken die sichtbar werden,
+      Reichweite aufbauen und konstant Kunden gewinnen wollen – ohne Agenturabhängigkeit.
+    </p>
+
+    <!-- Orange scroll-down circle -->
+    <div class="hero-scroll">
+      <a href="#intro" class="hero-scroll-btn" aria-label="Nach unten scrollen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </a>
     </div>
-    <div class="hero-stats">
-      <div class="hero-stat"><img src="<?php echo $img; ?>marketingsafari-icon-gruen.svg" alt="" width="48" height="48"><span>Online Marketing<br><strong>Safari</strong></span></div>
-      <div class="hero-stat"><img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt="" width="48" height="48"><span>Content Creation<br><strong>Safari</strong></span></div>
-      <div class="hero-stat"><img src="<?php echo $img; ?>marketingsafari-icon-lila.svg" alt="" width="48" height="48"><span>Strategie &amp;<br><strong>Beratung</strong></span></div>
-    </div>
+
   </div>
 </section>
 
 <!-- INTRO: Zwei Safaris -->
-<section class="intro-section">
+<section class="intro-section" id="intro">
   <div class="container intro-grid">
     <div class="intro-text">
       <p class="section-overtitle">Was wir tun</p>
