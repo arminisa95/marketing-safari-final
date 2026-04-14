@@ -73,6 +73,9 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 	define('WP_DEBUG', false);
 }
 
+/** Force direct filesystem – prevents Elementor FTP error on Pantheon */
+define('FS_METHOD', 'direct');
+
 /* That's all, stop editing! Happy Pressing. */
 
 
