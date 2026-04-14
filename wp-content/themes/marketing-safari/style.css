@@ -45,14 +45,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   overflow: hidden;
 }
 
-/* Turquoise bar far left */
+/* Green column — 50% of viewport */
 .hero-green-bar {
-  position: absolute;
-  left: 0; top: 0;
-  width: 46px;
+  width: 50%;
+  flex-shrink: 0;
   height: 100%;
   background: #77E7AC;
-  z-index: 20;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,14 +66,20 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transform: rotate(-90deg);
 }
 
-/* Left image column */
-.hero-image-col {
-  position: relative;
+/* Right side wrapper — 50% */
+.hero-right {
   width: 50%;
   height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Image column — 45% of hero-right */
+.hero-image-col {
+  position: relative;
+  width: 45%;
   flex-shrink: 0;
-  clip-path: polygon(0 0, 88% 0, 100% 100%, 0 100%);
-  z-index: 1;
+  height: 100%;
 }
 .hero-img {
   width: 100%;
@@ -85,8 +89,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .hero-logo-overlay {
   position: absolute;
-  top: 36px;
-  left: 60px;
+  top: 30px;
+  left: 53px;
   z-index: 30;
 }
 .hero-logo-overlay img {
@@ -94,10 +98,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   width: auto;
 }
 
-/* Right black content column */
+/* Black content column — 55% of hero-right */
 .hero-content-col {
   position: relative;
-  flex: 1;
+  width: 55%;
   height: 100%;
   background: #000;
   display: flex;
