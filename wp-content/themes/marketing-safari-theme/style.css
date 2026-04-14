@@ -934,6 +934,22 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   background: #77E7AC;
   z-index: 10;
 }
+.ms-hero-image-col.elementor-column::after {
+  content: 'by plappermaul';
+  position: absolute;
+  left: -57px;
+  top: 50%;
+  width: 160px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #000;
+  transform: rotate(-90deg);
+  z-index: 11;
+  pointer-events: none;
+  white-space: nowrap;
+}
 .ms-hero-image-col .elementor-widget-image img {
   width: 100%;
   height: 100%;
@@ -954,6 +970,13 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   flex-direction: column;
   justify-content: center;
   height: 100%;
+}
+/* Responsive heading – prevent overflow */
+.ms-hero-section .elementor-heading-title {
+  font-size: clamp(28px, 3.5vw, 58px) !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 /* ── SERVICE CARDS ── */

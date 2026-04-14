@@ -10,6 +10,7 @@ add_action('init', function() {
     if (isset($_GET['ms_reset']) && current_user_can('manage_options')) {
         delete_option('ms_v3_done');
         delete_option('ms_v4_done');
+        delete_option('ms_v5_done');
     }
 });
 
@@ -19,7 +20,7 @@ add_action('init', 'ms_setup_elementor_page', 30);
    MAIN SETUP
    ────────────────────────────────────────────── */
 function ms_setup_elementor_page() {
-    if (get_option('ms_v4_done')) return;
+    if (get_option('ms_v5_done')) return;
     if (!class_exists('Elementor\Plugin'))   return;
     if (!is_user_logged_in())                return;
 
@@ -47,7 +48,7 @@ function ms_setup_elementor_page() {
     if (class_exists('\Elementor\Plugin')) {
         \Elementor\Plugin::$instance->files_manager->clear_cache();
     }
-    update_option('ms_v4_done', 1);
+    update_option('ms_v5_done', 1);
 }
 
 /* ──────────────────────────────────────────────
@@ -169,14 +170,10 @@ function ms_build_page($img) {
         _col(54, [
             'css_classes'      => 'ms-hero-content-col',
             'content_position' => 'middle',
-            'padding'          => _p(140,80,80,56),
+            'padding'          => _p(100,80,80,64),
         ], [
-            _heading('Marketing Agentur', 'p', $green, 13, 600, 16, [
-                'typography_text_transform' => 'uppercase',
-                'typography_letter_spacing' => _fs(1.5),
-            ]),
-            _heading('Marketing, das seinen Weg <span style="color:'.$green.'">kennt.</span>', 'h1', $white, 60, 800, 24),
-            _text('<p>Wir jagen keine Likes. Wir gewinnen Kunden.<br>Datengetriebene Strategien &amp; kreativer Content<br>für deinen nachhaltigen Wachstum.</p>', $muted, 18, 1.7, 40),
+            _heading('Einfach selbst&shy;ständig durch den <span style="font-family:&apos;Cormorant Garamond&apos;,Georgia,serif;font-style:italic;font-weight:600;font-size:1.1em;color:'.$green.'">Marketing Dschungel</span> navigieren', 'h1', $white, 52, 800, 32),
+            _text('<p>Marketing Safari ist ein Coaching Programm für Unternehmen und Marken die sichtbar werden, Reichweite aufbauen und konstant Kunden gewinnen wollen &ndash; ohne Agenturabhängigkeit.</p>', $muted, 17, 1.75, 40),
             /* Buttons row */
             _inner(['gap'=>'no','padding'=>_p(0,0,48,0)], [
                 _col(50, ['padding'=>_p(0,8,0,0)], [
