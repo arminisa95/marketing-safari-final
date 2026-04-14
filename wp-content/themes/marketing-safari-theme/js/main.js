@@ -1,68 +1,30 @@
-/**
- * Marketing Safari Theme - Main JavaScript
- */
-
 (function() {
-    'use strict';
-    
-    // DOM Ready
-    document.addEventListener('DOMContentLoaded', function() {
-        initMobileMenu();
-        initSmoothScroll();
-        initHeaderScroll();
+  'use strict';
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Mobile Menu
+    var toggle = document.getElementById('mobile-toggle');
+    var nav    = document.getElementById('main-nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', function() {
+        nav.classList.toggle('active');
+      });
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        var id = this.getAttribute('href');
+        if (id === '#') return;
+        var el = document.querySelector(id);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Close mobile menu
+          if (nav) nav.classList.remove('active');
+        }
+      });
     });
-    
-    /**
-     * Mobile Menu Toggle
-     */
-    function initMobileMenu() {
-        const toggle = document.querySelector('.mobile-menu-toggle');
-        const nav = document.querySelector('.main-nav');
-        
-        if (!toggle || !nav) return;
-        
-        toggle.addEventListener('click', function() {
-            nav.classList.toggle('active');
-        });
-    }
-    
-    /**
-     * Smooth Scroll for anchor links
-     */
-    function initSmoothScroll() {
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                if (href === '#') return;
-                
-                const target = document.querySelector(href);
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    }
-    
-    /**
-     * Header scroll effect
-     */
-    function initHeaderScroll() {
-        const header = document.querySelector('.site-header');
-        if (!header) return;
-        
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 50) {
-                header.style.backgroundColor = 'rgba(26, 26, 26, 0.95)';
-                header.style.backdropFilter = 'blur(10px)';
-            } else {
-                header.style.backgroundColor = 'transparent';
-                header.style.backdropFilter = 'none';
-            }
-        });
-    }
-    
+  });
+
 })();
