@@ -306,6 +306,20 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* =============================================
+   YELLOW WAVE BANNER
+   ============================================= */
+.yellow-wave-banner {
+  display: block;
+  line-height: 0;
+  font-size: 0;
+}
+.yellow-wave-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* =============================================
    INTRO SECTION
    ============================================= */
 .intro-section {

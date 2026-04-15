@@ -76,4 +76,11 @@
   </div>
 </section>
 
+<!-- ══════════════════════════════════════════
+     YELLOW WAVE BANNER
+     ══════════════════════════════════════════ -->
+<div class="yellow-wave-banner">
+  <img src="<?php echo $img; ?>yellow-wave-banner.png" alt="Marketing, das seinen Weg kennt. Wir jagen keine Likes. Wir gewinnen Kunden.">
+</div>
+
 <?php get_footer(); ?>
