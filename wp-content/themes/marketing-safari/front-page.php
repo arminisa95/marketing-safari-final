@@ -137,8 +137,8 @@
 
   <div class="process-content">
     <h2 class="process-heading">So läuft deine <em>Safari</em> ab:</h2>
-    <p class="process-subheading">Geführt, strukturiert &amp; auf Augenhöhe – mit ein paar wilden Überraschungen und jeder Menge Inspiration.</p>
-    <p class="process-intro">Marketing ist keine einmalige Aktion, sondern eine Reise. Eine Reise, die Klarheit schafft, den Blick schärft und zeigt, welcher Weg wirklich zu deinem Unternehmen passt. Auf der Marketing Safari bist du nicht allein unterwegs: Du wirst begleitet, gefordert und unterstützt – Schritt für Schritt, Station für Station.</p>
+    <p class="process-subheading">Geführt, strukturiert &amp; auf Augenhöhe – mit ein paar wilden<br>Überraschungen und jeder Menge Inspiration.</p>
+    <p class="process-intro">Marketing ist keine einmalige Aktion, sondern eine Reise. Eine Reise, die Klarheit schafft, den Blick schärft und<br>zeigt, welcher Weg wirklich zu deinem Unternehmen passt. Auf der Marketing Safari bist du nicht allein<br>unterwegs: Du wirst begleitet, gefordert und unterstützt – Schritt für Schritt, Station für Station.</p>
   </div>
 
   <div class="process-steps">
@@ -186,12 +186,26 @@
   </div>
 
   <div class="process-content referenzen-block">
-    <h2 class="process-heading">Referenzen aus der Praxis</h2>
-    <p class="referenzen-lead">Die Projekte, die wir hier zeigen, haben wir in den vergangenen Jahren als Agentur Plappermaul umgesetzt und begleitet. Sie stehen für echte Herausforderungen, echte Unternehmen und messbare Ergebnisse – nicht für Theorie oder Testcases.</p>
+    <h2 class="process-heading">Referenzen<br>aus der <em>Praxis</em></h2>
+    <p class="referenzen-lead">Die Projekte, die wir hier zeigen, haben wir in den vergangenen Jahren als Agentur Plappermaul<br>umgesetzt und begleitet. Sie stehen für echte Herausforderungen, echte Unternehmen und messbare<br>Ergebnisse – nicht für Theorie oder Testcases.</p>
     <p class="referenzen-body">Da die Nachfrage nach unserem Know-how stetig wächst, haben wir uns entschieden, dieses Wissen nicht mehr nur punktuell als Agenturleistung anzubieten. Mit Marketing Safari machen wir unsere Erfahrung erstmals in einem strukturierten Coaching-Programm für eine breitere Zielgruppe zugänglich. Damit du von dem profitierst, was sich in der Praxis hundertfach bewährt hat.</p>
     <img src="<?php echo $img; ?>referenzen-rectangle.png" alt="Referenzen aus der Praxis" class="referenzen-img">
     <p class="referenzen-caption">Online Marketing<br>Pelviqueens</p>
-    <img src="<?php echo $img; ?>referenzen-group9.png" alt="Online Marketing Pelviqueens" class="referenzen-group9">
+    <img src="<?php echo $img; ?>referenzen-group9.png" alt="Content Creation Referenzen" class="referenzen-group9">
+    <div class="referenzen-group9-captions">
+      <div class="referenzen-group9-caption">
+        <p>Content Creation</p>
+        <p>Stadtgemeinde Bad Hall</p>
+      </div>
+      <div class="referenzen-group9-caption">
+        <p>Content Creation</p>
+        <p>Modehaus Kutsam</p>
+      </div>
+      <div class="referenzen-group9-caption">
+        <p>Content Creation</p>
+        <p>Tourismusverband Attersee-Attergau</p>
+      </div>
+    </div>
   </div>
 
 </section>
@@ -210,7 +224,7 @@
       </div>
     </div>
 
-    <p class="sds-body">Online Marketing fühlt sich oft an wie ein undurchdringlicher Dschungel: zu viele Kanäle, zu viele Tools, zu wenig Überblick. In der Online Marketing Safari bringen wir Ordnung in dieses Chaos und zeigen dir, wie Marketing wirklich funktioniert. Du lernst, welche Maßnahmen für dein Unternehmen Sinn machen – und welche du getrost ignorieren kannst. Statt kurzfristiger Aktionen bekommst du ein klares System, das zu deinem Alltag passt. Wir arbeiten praxisnah, ehrlich und ohne Marketing-Buzzwords. Du setzt direkt um, sammelst echte Erfahrungen und siehst, was Wirkung zeigt. Am Ende der Safari weißt du nicht nur was zu tun ist, sondern auch warum. Und genau das macht den Unterschied zwischen Marketing-Aktionismus und nachhaltigem Wachstum.-</p>
+    <p class="sds-body">Online Marketing fühlt sich oft an wie ein undurchdringlicher Dschungel: zu viele Kanäle, zu viele Tools, zu wenig Überblick. In der Online Marketing Safari bringen wir Ordnung in dieses Chaos und zeigen dir, wie Marketing wirklich funktioniert. Du lernst, welche Maßnahmen für dein Unternehmen Sinn machen – und welche du getrost ignorieren kannst. Statt kurzfristiger Aktionen bekommst du ein klares System, das zu deinem Alltag passt. Wir arbeiten praxisnah, ehrlich und ohne Marketing-Buzzwords. Du setzt direkt um, sammelst echte Erfahrungen und siehst, was Wirkung zeigt. Am Ende der Safari weißt du nicht nur was zu tun ist, sondern auch warum. Und genau das macht den Unterschied zwischen Marketing-Aktionismus und nachhaltigem Wachstum.</p>
 
     <div class="sds-features">
       <div class="sds-features-row">
@@ -394,7 +408,9 @@
       <img src="<?php echo $img; ?>marketingsafari-icon-papagei-gruen.svg" alt="" class="warum-parrot">
     </div>
 
-    <p class="warum-body">Wir lieben Agenturarbeit. Seit über 14 Jahren gestalten wir bei Plappermaul Marken, Kampagnen und digitale Strategien für über 400 Kunden. Wir tauchen tief ein, denken mit und setzen um. Aber wir wissen auch: Es gibt Phasen, in denen es strategisch sinnvoller ist, Marketing selbst im Unternehmen aufzubauen. Zum Beispiel, wenn …</p>
+    <p class="warum-body">Wir lieben Agenturarbeit. Seit über 14 Jahren gestalten wir bei Plappermaul Marken, Kampagnen und digitale Strategien für über 400 Kunden. Wir tauchen tief ein, denken mit und setzen um. Aber wir wissen auch: Es gibt Phasen, in denen es strategisch sinnvoller ist, Marketing selbst im Unternehmen aufzubauen.</p>
+
+    <p class="warum-sub">Zum Beispiel, wenn …</p>
 
     <div class="warum-cols">
       <div class="warum-col">
