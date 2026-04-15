@@ -485,10 +485,20 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     BOTTOM YELLOW WAVE BANNER
+     GALLERY NAV — two orange arrow buttons
+     Figma: Group 11 (left) + Group 12 (right)
+     White area between photos and yellow banner
+     ══════════════════════════════════════════ -->
+<div class="gallery-nav">
+  <img src="<?php echo $img; ?>group11-arrow-left.svg" alt="" class="gallery-nav-arrow" aria-hidden="true">
+  <img src="<?php echo $img; ?>group12-arrow-right.svg" alt="" class="gallery-nav-arrow" aria-hidden="true">
+</div>
+
+<!-- ══════════════════════════════════════════
+     BOTTOM YELLOW WAVE BANNER (Group 10.png)
      ══════════════════════════════════════════ -->
 <div class="yellow-wave-banner">
-  <img src="<?php echo $img; ?>yellow-wave-banner.png" alt="Mit Marketing Safari nie den Überblick verlieren.">
+  <img src="<?php echo $img; ?>group10-yellow-banner.png" alt="Mit Marketing Safari - nie den Überblick zwischen Content-Ideen, Anzeigen und Tools verlieren.">
 </div>
 
 <?php get_footer(); ?>
