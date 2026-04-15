@@ -7,8 +7,8 @@
     </div>
     <div class="footer-info-col">
       <address class="footer-address">
-        office@plappermaul.at<br>
-        +43 (0) 699 17 09 4217<br>
+        <a href="mailto:office@plappermaul.at">office@plappermaul.at</a><br>
+        <a href="tel:+4369917094217">+43 (0) 699 17 09 4217</a><br>
         Mühlgruberstraße 42,<br>
         4540 Pfarrkirchen bei Bad Hall
       </address>
