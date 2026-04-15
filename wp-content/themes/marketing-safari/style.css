@@ -502,6 +502,154 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .footer-legal a:hover { color: #fff; }
 
 /* =============================================
+   ZWEI SAFARIS SECTION (black bg, two cards)
+   ============================================= */
+.safaris-section {
+  background: #000;
+  padding: 100px 0 120px;
+}
+.safaris-section .container {
+  max-width: none;
+  padding: 0 5%;
+}
+
+/* Heading: Gibson 82px — "Ziel:" in Instrument Serif italic */
+.safaris-heading {
+  font-family: 'Gibson', sans-serif;
+  font-size: clamp(32px, 4.3vw, 82px);
+  font-weight: 400;
+  line-height: 0.94;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.safaris-heading em {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Subtitle: Gibson 35px */
+.safaris-subtitle {
+  font-family: 'Gibson', sans-serif;
+  font-size: clamp(18px, 1.82vw, 35px);
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin-bottom: 28px;
+}
+
+/* Intro paragraph: Gibson 25px */
+.safaris-intro {
+  font-family: 'Gibson', sans-serif;
+  font-size: clamp(14px, 1.3vw, 25px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+  max-width: 1065px;
+  margin-bottom: clamp(48px, 5vw, 90px);
+}
+
+/* Two cards row */
+.safari-cards {
+  display: flex;
+  gap: 40px;
+}
+
+/* Individual card: white border, 26px radius, 40px padding */
+.safari-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  border: 1px solid #fff;
+  border-radius: 26px;
+}
+
+/* Card header: icon left of title */
+.safari-card-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.safari-card-icon {
+  width: clamp(44px, 3.9vw, 64px);
+  height: clamp(44px, 3.9vw, 64px);
+  flex-shrink: 0;
+}
+
+/* Card title: Gibson + Instrument Serif italic for "Safari" */
+.safari-card-title {
+  font-family: 'Gibson', sans-serif;
+  font-size: clamp(22px, 2.97vw, 57px);
+  font-weight: 400;
+  line-height: 0.88;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+.safari-card-title em {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Tagline, body, price: Gibson 25px */
+.safari-card-tagline,
+.safari-card-body,
+.safari-card-price {
+  font-family: 'Gibson', sans-serif;
+  font-size: clamp(14px, 1.3vw, 25px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+}
+.safari-card-tagline { letter-spacing: 0.05em; }
+.safari-card-price   { letter-spacing: 0.05em; margin-top: auto; }
+
+/* Button row */
+.safari-card-btns {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Primary: white bg, black text */
+.btn-safari-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  background: #fff;
+  color: #000;
+  border-radius: 40px;
+  font-family: 'Gibson', sans-serif;
+  font-size: clamp(14px, 1.04vw, 20px);
+  font-weight: 500;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+.btn-safari-primary:hover { opacity: 0.85; }
+
+/* Secondary: transparent bg, white border */
+.btn-safari-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  font-family: 'Gibson', sans-serif;
+  font-size: clamp(14px, 1.04vw, 20px);
+  font-weight: 500;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+.btn-safari-secondary:hover { opacity: 0.7; }
+
+/* =============================================
    RESPONSIVE
    ============================================= */
 @media (max-width: 1200px) {
@@ -626,6 +774,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .intro-feature { padding: 0; padding-top: 32px; border-left: none; border-top: 1px solid rgba(0,0,0,0.15); }
   .intro-feature:first-child { border-top: none; padding-top: 0; }
   .intro-feature-label { font-size: clamp(18px, 5vw, 28px); }
+
+  /* Safaris section */
+  .safaris-section { padding: 60px 0 80px; }
+  .safaris-section .container { padding: 0 20px; }
+  .safaris-heading { line-height: 1.05; margin-bottom: 14px; }
+  .safari-cards { flex-direction: column; gap: 24px; }
+  .safari-card { padding: 28px 20px; }
+  .safari-card-btns { flex-direction: column; }
+  .btn-safari-primary, .btn-safari-secondary { text-align: center; justify-content: center; }
 }
 
 @media (max-width: 600px) {

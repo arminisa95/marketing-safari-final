@@ -83,4 +83,51 @@
   <img src="<?php echo $img; ?>yellow-wave-banner.png" alt="Marketing, das seinen Weg kennt. Wir jagen keine Likes. Wir gewinnen Kunden.">
 </div>
 
+<!-- ══════════════════════════════════════════
+     ZWEI SAFARIS SECTION
+     ══════════════════════════════════════════ -->
+<section class="safaris-section" id="leistungen">
+  <div class="container">
+
+    <h2 class="safaris-heading">Zwei Safaris, ein <em>Ziel:</em></h2>
+    <p class="safaris-subtitle">Souveränes Marketing</p>
+    <p class="safaris-intro">Du weißt, dass Marketing wichtig ist – aber dir fehlt der klare Weg. Marketing kostet Zeit, Nerven und Geld. Gute Agenturen sind in der Situation preislich noch nicht möglich. Social Media fühlt sich wie Beschäftigungstherapie an. Weil die nötige Orientierung und der Fokus fehlt.</p>
+
+    <div class="safari-cards">
+
+      <!-- Card 1: Online Marketing Safari -->
+      <div class="safari-card">
+        <div class="safari-card-header">
+          <img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt="" class="safari-card-icon">
+          <h3 class="safari-card-title">Online Marketing <em>Safari</em></h3>
+        </div>
+        <p class="safari-card-tagline">4 Monate. Mehr Reichweite, mehr Leads, mehr Kunden – mit System.</p>
+        <p class="safari-card-body">Die Online Marketing Safari ist ein 4-monatiges Intensiv-Coaching für Unternehmen, die ihr Online Marketing nicht länger auslagern, sondern selbst verstehen, planen und umsetzen wollen.<br><br>Wir nehmen dich mit auf eine geführte Safari durch den Marketing-Dschungel – mit klarer Struktur, praxisnahen Inhalten und persönlicher Begleitung.</p>
+        <p class="safari-card-price">€ 4.000 pro Teilnehmer / Programm</p>
+        <div class="safari-card-btns">
+          <a href="#kontakt" class="btn-safari-primary">jetzt Info-Gespräch vereinbaren</a>
+          <a href="#kontakt" class="btn-safari-secondary">mehr Informationen</a>
+        </div>
+      </div>
+
+      <!-- Card 2: Content Creation Safari -->
+      <div class="safari-card">
+        <div class="safari-card-header">
+          <img src="<?php echo $img; ?>marketingsafari-icon-gruen.svg" alt="" class="safari-card-icon">
+          <h3 class="safari-card-title">Content Creation <em>Safari</em></h3>
+        </div>
+        <p class="safari-card-tagline">4 Monate. Content, der sichtbar macht, Vertrauen aufbaut und verkauft.</p>
+        <p class="safari-card-body">Die Content Creation Safari ist ein 4-monatiges Coaching-Programm für Unternehmen, die ihren Content nicht mehr spontan oder nebenbei produzieren wollen, sondern strategisch, effizient und mit Wiedererkennungswert.<br><br>Wir zeigen dir, wie du Content selbst erstellst, der zu deiner Marke passt, gesehen wird und langfristig wirkt – vom Smartphone Setup bis zum Profi-Equipment.</p>
+        <p class="safari-card-price">€ 4.000 pro Teilnehmer / Programm</p>
+        <div class="safari-card-btns">
+          <a href="#kontakt" class="btn-safari-primary">jetzt Info-Gespräch vereinbaren</a>
+          <a href="#kontakt" class="btn-safari-secondary">mehr Informationen</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 <?php get_footer(); ?>
