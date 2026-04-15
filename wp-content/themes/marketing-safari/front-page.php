@@ -394,9 +394,7 @@
       <img src="<?php echo $img; ?>marketingsafari-icon-papagei-gruen.svg" alt="" class="warum-parrot">
     </div>
 
-    <p class="warum-body">Wir lieben Agenturarbeit. Seit über 14 Jahren gestalten wir bei Plappermaul Marken, Kampagnen und digitale Strategien für über 400 Kunden. Wir tauchen tief ein, denken mit und setzen um. Aber wir wissen auch: Es gibt Phasen, in denen es strategisch sinnvoller ist, Marketing selbst im Unternehmen aufzubauen.</p>
-
-    <h3 class="warum-sub">Zum Beispiel, wenn ...</h3>
+    <p class="warum-body">Wir lieben Agenturarbeit. Seit über 14 Jahren gestalten wir bei Plappermaul Marken, Kampagnen und digitale Strategien für über 400 Kunden. Wir tauchen tief ein, denken mit und setzen um. Aber wir wissen auch: Es gibt Phasen, in denen es strategisch sinnvoller ist, Marketing selbst im Unternehmen aufzubauen. Zum Beispiel, wenn …</p>
 
     <div class="warum-cols">
       <div class="warum-col">
@@ -485,5 +483,12 @@
     <img src="<?php echo $img; ?>marketingsafari-slider-1-3.webp" alt="">
   </div>
 </section>
+
+<!-- ══════════════════════════════════════════
+     BOTTOM YELLOW WAVE BANNER
+     ══════════════════════════════════════════ -->
+<div class="yellow-wave-banner">
+  <img src="<?php echo $img; ?>yellow-wave-banner.png" alt="Mit Marketing Safari nie den Überblick verlieren.">
+</div>
 
 <?php get_footer(); ?>

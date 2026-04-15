@@ -493,19 +493,71 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .gallery-caption strong { display: block; font-size: 15px; font-weight: 700; color: #000; margin-top: 2px; }
 
 /* =============================================
-   FOOTER
+   FOOTER  — Figma: black bg 666px · logo left · contact right
    ============================================= */
-.site-footer { background: #000; }
-.footer-body { padding: 80px 0 40px; }
-.footer-inner { display: flex; align-items: flex-start; justify-content: space-between; gap: 60px; padding-bottom: 60px; border-bottom: 1px solid rgba(255,255,255,0.1); }
-.footer-logo-img { height: 72px; width: auto; }
-.footer-contact-col p { font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.9; }
-.footer-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 32px; }
-.footer-by { font-size: 13px; color: rgba(255,255,255,0.45); }
-.footer-by a { color: rgba(255,255,255,0.65); text-decoration: underline; }
-.footer-legal { display: flex; gap: 32px; }
-.footer-legal a { font-size: 13px; color: rgba(255,255,255,0.65); transition: color 0.2s; }
-.footer-legal a:hover { color: #fff; }
+.site-footer {
+  background: #000;
+  padding: clamp(40px, 8.44vw, 162px) clamp(20px, 4.54vw, 87px) clamp(30px, 2.29vw, 44px);
+}
+
+/* Main row: logo left ~44% · contact right ~42% */
+.footer-main {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(40px, 4vw, 80px);
+  margin-bottom: clamp(40px, 10.04vw, 193px);
+}
+.footer-logo-col {
+  flex: 0 0 clamp(220px, 44.06vw, 846px);
+}
+.footer-logo-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.footer-info-col {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+.footer-address {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 500;
+  font-size: clamp(16px, 1.563vw, 30px);
+  line-height: 1.167;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  font-style: normal;
+}
+
+/* Bottom bar: by plappermaul left · legal right */
+.footer-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-by {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 1.302vw, 25px);
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.footer-legal {
+  display: flex;
+  gap: clamp(20px, 2.448vw, 47px);
+}
+.footer-legal a {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 1.302vw, 25px);
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  transition: opacity 0.2s;
+}
+.footer-legal a:hover { opacity: 0.7; }
 
 /* =============================================
    ZWEI SAFARIS SECTION (black bg, two cards)
@@ -869,7 +921,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin: 0;
 }
 .sds-heading em {
-  font-family: 'Playfair Display', 'Instrument Serif', Georgia, serif;
+  font-family: 'Instrument Serif', Georgia, serif;
   font-style: italic;
   font-weight: 400;
 }
@@ -1101,17 +1153,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   line-height: 1.143;
   letter-spacing: 0.05em;
   color: #000000;
-  margin-bottom: clamp(12px, 1.25vw, 24px);
-}
-
-/* "Zum Beispiel, wenn ..." — same size as body */
-.warum-sub {
-  font-family: 'Gibson', sans-serif;
-  font-weight: 400;
-  font-size: clamp(15px, 1.823vw, 35px);
-  line-height: 1.143;
-  color: #000000;
-  margin-bottom: clamp(20px, 2.083vw, 40px);
+  margin-bottom: clamp(24px, 2.76vw, 53px);
 }
 
 /* 4-column layout: flex row, gap 50px, right borders on first 3 */
@@ -1333,7 +1375,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .gallery3-grid img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 560 / 700;
   display: block;
   object-fit: cover;
 }
@@ -1493,6 +1535,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
   /* Warum section mobile */
   .warum-heading-row { flex-direction: column; align-items: flex-start; }
+  .warum-body { margin-bottom: clamp(20px, 3vw, 40px); }
   .warum-cols { flex-direction: column; gap: 20px; }
   .warum-col { border-right: none; border-bottom: 2px solid #000; padding-bottom: 20px; width: 100%; }
   .warum-col:last-child { border-bottom: none; padding-bottom: 0; }
@@ -1502,7 +1545,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero-heading { font-size: 28px; }
   .impressions-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: 1fr; }
-  .footer-inner { flex-direction: column; gap: 28px; }
-  .footer-bottom { flex-direction: column; text-align: center; gap: 10px; }
+  .footer-main { flex-direction: column; gap: 28px; }
+  .footer-logo-col { flex: none; width: 180px; }
+  .footer-bottom-bar { flex-direction: column; gap: 16px; text-align: center; }
   .booking-card { padding: 28px 18px; }
 }

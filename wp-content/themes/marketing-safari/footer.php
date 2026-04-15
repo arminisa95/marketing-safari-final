@@ -1,27 +1,26 @@
 <?php $img = get_template_directory_uri() . '/images/'; ?>
 
 <footer class="site-footer">
-  <div class="footer-body">
-    <div class="container">
-      <div class="footer-inner">
-        <img src="<?php echo $img; ?>marketingsafari-logo-weiß.svg" alt="Marketing Safari" class="footer-logo-img">
-        <div class="footer-contact-col">
-          <p>
-            Marketing Safari<br>
-            hello@marketingsafari.at<br>
-            marketingsafari.at
-          </p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="footer-by">Made with ♥ by <a href="https://plappermaul.at" target="_blank">plappermaul</a></p>
-        <nav class="footer-legal">
-          <a href="/impressum">Impressum</a>
-          <a href="/datenschutz">Datenschutz</a>
-          <a href="/agb">AGB</a>
-        </nav>
-      </div>
+  <div class="footer-main">
+    <div class="footer-logo-col">
+      <img src="<?php echo $img; ?>marketingsafari-logo-weiß.svg" alt="Marketing Safari" class="footer-logo-img">
     </div>
+    <div class="footer-info-col">
+      <address class="footer-address">
+        office@plappermaul.at<br>
+        +43 (0) 699 17 09 4217<br>
+        Mühlgruberstraße 42,<br>
+        4540 Pfarrkirchen bei Bad Hall
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom-bar">
+    <span class="footer-by">by plappermaul</span>
+    <nav class="footer-legal">
+      <a href="/impressum">Impressum</a>
+      <a href="/datenschutz">Datenschutz</a>
+      <a href="/agb">AGB</a>
+    </nav>
   </div>
 </footer>
 
