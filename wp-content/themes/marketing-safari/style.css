@@ -330,6 +330,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: #000;
 }
 
+@media (min-width: 769px) {
+  .intro-feature:nth-child(2) {
+    align-items: center;
+  }
+
+  .intro-feature:nth-child(2) .intro-feature-label {
+    text-align: left;
+  }
+}
+
 /* =============================================
    YELLOW WAVE BANNER
    ============================================= */
