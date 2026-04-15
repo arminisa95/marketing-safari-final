@@ -1469,6 +1469,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   align-items: flex-start;
   padding: clamp(24px, 2.45vw, 47px) clamp(20px, 9.16vw, 176px) clamp(60px, 11.15vw, 214px);
 }
+.gallery-nav-btn {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+.gallery-nav-btn:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 4px;
+}
 .gallery-nav-arrow {
   width: clamp(28px, 2.41vw, 46px);
   height: auto;

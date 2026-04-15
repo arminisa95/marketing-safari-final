@@ -333,7 +333,7 @@ $safari_detail_sections = [
 
 <!-- 3-photo gallery -->
 <section class="gallery3-section">
-  <div class="gallery3-grid">
+  <div class="gallery3-grid" data-gallery-carousel data-gallery-base="marketingsafari-slider-1" data-gallery-total="6">
     <img src="<?php echo $img; ?>marketingsafari-slider-1-1.webp" alt="">
     <img src="<?php echo $img; ?>marketingsafari-slider-1-2.webp" alt="">
     <img src="<?php echo $img; ?>marketingsafari-slider-1-3.webp" alt="">
@@ -342,8 +342,12 @@ $safari_detail_sections = [
 
 <!-- Gallery navigation -->
 <div class="gallery-nav">
-  <img src="<?php echo $img; ?>group11-arrow-left.svg" alt="" class="gallery-nav-arrow" aria-hidden="true">
-  <img src="<?php echo $img; ?>group12-arrow-right.svg" alt="" class="gallery-nav-arrow" aria-hidden="true">
+  <button type="button" class="gallery-nav-btn" data-gallery-dir="prev" aria-label="Vorheriges Bildset anzeigen">
+    <img src="<?php echo $img; ?>group11-arrow-left.svg" alt="" class="gallery-nav-arrow" aria-hidden="true">
+  </button>
+  <button type="button" class="gallery-nav-btn" data-gallery-dir="next" aria-label="Nächstes Bildset anzeigen">
+    <img src="<?php echo $img; ?>group12-arrow-right.svg" alt="" class="gallery-nav-arrow" aria-hidden="true">
+  </button>
 </div>
 
 <!-- Bottom yellow wave banner -->
