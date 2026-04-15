@@ -1452,7 +1452,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .gallery3-section { padding: 48px 20px 0; }
 
   /* Warum section mobile */
-  .warum-section { max-width: none; margin: 0; }
+  .warum-section { max-width: none; margin: 0; background: var(--color-white); }
   .warum-heading-row { flex-direction: column; align-items: flex-start; }
   .warum-body { margin-bottom: 20px; overflow-wrap: anywhere; }
   .warum-sub { margin-bottom: 32px; }
@@ -1460,6 +1460,75 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .warum-col { border-right: none; border-bottom: 2px solid #000; padding-bottom: 20px; width: 100%; }
   .warum-col:last-child { border-bottom: none; padding-bottom: 0; }
   .warum-col p { overflow-wrap: anywhere; }
+
+  /* Explicit mobile backgrounds to prevent color issues */
+  .safaris-section { background: #000; }
+  .safari-card { background: transparent; border: 1px solid #fff; }
+  .safari-card-title,
+  .safari-card-tagline,
+  .safari-card-body,
+  .safari-card-price { color: #fff; }
+
+  /* Safari process section - ensure white bg and step colors */
+  .safari-process-section { background: #fff; }
+  .process-step--1 { background: #FFEF5F; }
+  .process-step--2 { background: #77E7AC; }
+  .process-step--3 { background: #FF7B29; }
+  .process-step--4 { background: #C29AFF; }
+  .process-step--5 { background: #71E7FF; }
+
+  /* SDS sections - ensure black bg */
+  .sds-section { background: #000; }
+  .sds-form-orange { background: var(--color-accent-orange); }
+  .sds-form-green { background: var(--color-accent-green); }
+  .sds-heading,
+  .sds-subtitle,
+  .sds-body,
+  .sds-meta,
+  .sds-feature span { color: #fff; }
+
+  /* Anspruch section - ensure white bg and stripe colors */
+  .anspruch-section { background: #fff; }
+  .anspruch-yellow { background: var(--color-accent-yellow); }
+  .anspruch-green { background: var(--color-accent-green); }
+  .anspruch-orange { background: var(--color-accent-orange); }
+  .anspruch-cyan { background: var(--color-accent-cyan); }
+
+  /* Footer - ensure black bg */
+  .site-footer { background: #000; }
+  .footer-address,
+  .footer-by,
+  .footer-legal a { color: #fff; }
+
+  /* Gallery - better mobile sizing */
+  .gallery3-section { background: #fff; }
+  .gallery3-grid img {
+    aspect-ratio: 16 / 10;
+    max-height: 280px;
+  }
+
+  /* Ausbildung - dark overlay for text readability */
+  .ausbildung-section::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
+    z-index: 0;
+  }
+
+  /* Better mobile typography for small text */
+  .sds-body,
+  .process-intro,
+  .referenzen-body,
+  .warum-body,
+  .warum-sub,
+  .warum-col p { font-size: 14px; }
+
+  /* Improve readability on small screens */
+  .referenzen-lead,
+  .referenzen-body,
+  .process-intro,
+  .safaris-intro { font-size: 15px; }
 }
 
 @media (max-width: 600px) {
@@ -1469,10 +1538,176 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .footer-main { flex-direction: column; gap: 28px; }
   .footer-logo-col { flex: none; width: 180px; }
   .footer-bottom-bar { flex-direction: column; gap: 16px; text-align: center; }
+
+  /* Better text handling on small screens */
+  .process-subheading br,
+  .process-intro br,
+  .safaris-intro br,
+  .referenzen-lead br,
+  .referenzen-body br { display: none; }
+
+  /* Improved card buttons */
+  .safari-card-btns { gap: 12px; }
+  .btn-safari-primary,
+  .btn-safari-secondary { width: 100%; font-size: 14px; }
+
+  /* Form improvements */
+  .sds-field label { font-size: 14px; }
+  .sds-field input,
+  .sds-field textarea { font-size: 14px; }
+  .sds-form-heading { font-size: 18px; }
+
+  /* Ausbildung improvements */
+  .ausbildung-heading { font-size: 28px; }
+  .ausbildung-col-text { font-size: 18px; }
+
+  /* Anspruch improvements */
+  .anspruch-heading { font-size: 28px; }
+  .anspruch-body { font-size: 16px; }
+  .anspruch-stripe span { font-size: 16px; }
+
+  /* Process step improvements */
+  .process-heading { font-size: 28px; }
+  .process-subheading { font-size: 18px; }
+
+  /* Warum section improvements */
+  .warum-heading { font-size: 28px; }
 }
 
 @media (max-width: 480px) {
   .process-step-label { font-size: clamp(14px, 5.2vw, 22px); }
   .process-step-inner { padding: 10px 12px; }
   .sds-form-grid { row-gap: 12px; }
+
+  /* Hero refinements */
+  .hero-section { min-height: auto; }
+  .hero-img { height: 55vw; min-height: 200px; max-height: 300px; }
+  .hero-green-bar { height: 32px; }
+  .hero-green-bar-text { font-size: 12px; }
+  .hero-logo img { width: 80px; }
+  .hero-logo { top: 28px; left: 12px; }
+  .hero-content-overlay { padding: 20px 16px 36px; }
+  .hero-heading { font-size: 26px; margin-bottom: 16px; }
+  .hero-subtext { font-size: 14px; }
+  .hero-nav { margin-bottom: 20px; gap: 6px; }
+  .hero-nav-pill { font-size: 12px; padding: 5px 10px; }
+  .hero-scroll-btn { width: 40px; height: 40px; margin-top: 20px; }
+
+  /* Text intro refinements */
+  .text-intro-section { padding: 40px 0 60px; }
+  .text-intro-section .container { padding: 0 16px; }
+  .intro-text { font-size: 16px; }
+  .intro-features { margin-top: 36px; gap: 24px; }
+  .intro-feature { padding-top: 24px; }
+  .intro-feature-icon { width: 40px; height: 40px; }
+  .intro-feature-label { font-size: 16px; }
+
+  /* Yellow wave banner */
+  .yellow-wave-banner img { max-height: 120px; object-fit: cover; object-position: center; }
+
+  /* Safari section */
+  .safaris-section { padding: 40px 0 60px; }
+  .safaris-section .container { padding: 0 16px; }
+  .safaris-heading { font-size: 26px; }
+  .safaris-subtitle { font-size: 16px; }
+  .safaris-intro { font-size: 14px; }
+  .safari-cards { gap: 16px; }
+  .safari-card { padding: 20px 16px 28px; border-radius: 20px; }
+  .safari-card-header { gap: 12px; }
+  .safari-card-icon { width: 48px; height: 48px; }
+  .safari-card-title { font-size: 22px; }
+  .safari-card-tagline,
+  .safari-card-body,
+  .safari-card-price { font-size: 14px; }
+  .safari-card-btns { gap: 10px; }
+  .btn-safari-primary,
+  .btn-safari-secondary { height: 40px; font-size: 13px; }
+
+  /* Process section */
+  .safari-process-section { padding-top: 40px; }
+  .process-content { padding-left: 16px; padding-right: 16px; }
+  .process-heading { font-size: 26px; }
+  .process-subheading { font-size: 16px; }
+  .process-intro { font-size: 14px; margin-bottom: 30px; }
+  .process-step { min-height: 44px; height: auto; }
+  .process-step-inner { padding: 10px 12px; gap: 8px; }
+  .process-step-num { width: 24px; height: 24px; font-size: 12px; }
+  .process-step-label { font-size: 15px; letter-spacing: 0.02em; }
+  .process-step-arrow { width: 20px; }
+
+  /* Referenzen */
+  .referenzen-block { padding-top: 40px; padding-bottom: 20px; }
+  .referenzen-lead { font-size: 15px; margin-top: 12px; margin-bottom: 16px; }
+  .referenzen-body { font-size: 14px; margin-bottom: 20px; }
+  .referenzen-img { margin-top: 30px; }
+  .referenzen-caption { font-size: 14px; }
+  .referenzen-group9 { margin-top: 16px; }
+
+  /* SDS sections */
+  .sds-inner { padding: 24px 16px; }
+  .sds-title-row { gap: 10px; }
+  .sds-badge { width: 48px; height: 48px; }
+  .sds-heading { font-size: 26px; }
+  .sds-subtitle { font-size: 15px; }
+  .sds-body { font-size: 14px; margin-top: 12px; margin-bottom: 20px; }
+  .sds-features { gap: 12px; margin-bottom: 20px; }
+  .sds-features-row { gap: 12px; }
+  .sds-feature { gap: 8px; }
+  .sds-check { width: 14px; height: 12px; }
+  .sds-feature span { font-size: 14px; }
+  .sds-meta { font-size: 14px; margin-bottom: 20px; }
+  .sds-form-box { padding: 20px 16px 24px; border-radius: 16px; }
+  .sds-form-heading { font-size: 16px; margin-bottom: 16px; }
+  .sds-field label { font-size: 13px; }
+  .sds-field input,
+  .sds-field textarea { font-size: 13px; padding: 8px; }
+  .sds-field input { height: 36px; }
+  .sds-field textarea { height: 80px; }
+  .sds-checkbox-row label { font-size: 13px; }
+  .sds-submit { height: 38px; font-size: 14px; }
+
+  /* Warum section */
+  .warum-section { padding: 40px 16px 60px; }
+  .warum-heading { font-size: 26px; }
+  .warum-parrot { width: 40px; }
+  .warum-body { font-size: 14px; margin-bottom: 16px; }
+  .warum-sub { font-size: 14px; margin-bottom: 24px; }
+  .warum-cols { gap: 16px; }
+  .warum-col { padding-bottom: 16px; }
+  .warum-col p { font-size: 14px; }
+
+  /* Ausbildung */
+  .ausbildung-section { padding: 32px 16px; gap: 32px; }
+  .ausbildung-heading { font-size: 26px; }
+  .ausbildung-cols { gap: 20px; }
+  .ausbildung-col { gap: 12px; }
+  .ausbildung-icon { width: 40px; height: 40px; }
+  .ausbildung-col-text { font-size: 16px; }
+
+  /* Anspruch */
+  .anspruch-section { padding-top: 32px; }
+  .anspruch-content { padding: 0 16px; margin-bottom: 24px; }
+  .anspruch-heading { font-size: 26px; margin-bottom: 12px; }
+  .anspruch-body { font-size: 15px; }
+  .anspruch-stripe { padding: 12px 16px; }
+  .anspruch-stripe span { font-size: 15px; }
+
+  /* Gallery */
+  .gallery3-section { padding: 32px 16px 0; }
+  .gallery3-grid { gap: 8px; }
+  .gallery3-grid img { max-height: 200px; }
+
+  /* Gallery nav */
+  .gallery-nav { padding: 20px 16px 36px; }
+  .gallery-nav-arrow { width: 36px; }
+
+  /* Footer */
+  .site-footer { padding: 32px 16px 24px; }
+  .footer-main { gap: 24px; margin-bottom: 32px; }
+  .footer-logo-col { width: 160px; }
+  .footer-address { font-size: 14px; }
+  .footer-by,
+  .footer-legal a { font-size: 13px; }
+  .footer-legal { gap: 16px; }
+  .footer-bottom-bar { gap: 12px; }
 }
