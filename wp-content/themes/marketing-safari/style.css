@@ -878,12 +878,17 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: clamp(36px, 2.81vw, 54px) clamp(20px, 4.65vw, 89px) clamp(36px, 2.81vw, 54px) clamp(20px, 4.93vw, 95px);
 }
 
-@media (min-width: 769px) and (max-width: 1280px) {
-  .sds-inner {
-    max-width: calc(100% - 84px);
-    margin: 0 auto;
-    padding-left: clamp(48px, 7.8vw, 96px);
-    padding-right: clamp(48px, 7.8vw, 96px);
+@media (min-width: 1025px) {
+  .sds-title-row,
+  .sds-body,
+  .sds-features,
+  .sds-meta {
+    margin-left: clamp(24px, 6.5vw, 125px);
+    margin-right: clamp(0px, 1.7vw, 32px);
+  }
+
+  .sds-body {
+    max-width: clamp(760px, 76.9vw, 1477px);
   }
 }
 
@@ -1092,7 +1097,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: clamp(44px, 4.48vw, 86px) var(--content-pad-x) clamp(72px, 6.25vw, 120px);
 }
 
-@media (min-width: 769px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
   .warum-section {
     max-width: calc(100% - 84px);
     margin: 0 auto;
@@ -1162,7 +1167,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .warum-col {
   flex: 1;
-  min-height: clamp(78px, 6.25vw, 120px);
+  min-height: clamp(120px, 10.1vw, 194px);
   border-right: 1.5px solid #000;
   padding-right: clamp(8px, 0.83vw, 16px);
 }
@@ -1179,6 +1184,34 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   line-height: 1.2;
   letter-spacing: 0.05em;
   color: #000000;
+}
+
+@media (min-width: 1025px) {
+  .sds-inner {
+    padding-top: clamp(72px, 5.21vw, 100px);
+  }
+
+  .sds-section:last-of-type .sds-inner {
+    padding-bottom: clamp(72px, 5.21vw, 100px);
+  }
+
+  .warum-section {
+    padding-top: clamp(64px, 5.21vw, 100px);
+  }
+
+  .warum-cols {
+    min-height: 194px;
+  }
+
+  .warum-col {
+    display: flex;
+    align-items: center;
+  }
+
+  .warum-col:nth-child(1) p { max-width: 342px; }
+  .warum-col:nth-child(2) p { max-width: 313px; }
+  .warum-col:nth-child(3) p { max-width: 329px; }
+  .warum-col:nth-child(4) p { max-width: 339px; }
 }
 
 /* Ausbildung */
