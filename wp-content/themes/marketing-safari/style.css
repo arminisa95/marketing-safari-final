@@ -835,157 +835,214 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* =============================================
-   ONLINE MARKETING SAFARI — black detail section
+   SAFARI DETAIL SECTIONS (OMS + CCS)
+   Black background, Figma-exact typography
    ============================================= */
-.oms-section {
+.sds-section {
   background: #000;
   color: #fff;
 }
-.oms-inner {
-  padding: clamp(40px, 3.125vw, 60px) clamp(20px, 5.22vw, 100px) clamp(40px, 3.125vw, 60px);
+.sds-inner {
+  padding: clamp(40px, 3.125vw, 60px) clamp(20px, 5.22vw, 100px);
 }
 
-/* Header row: icon + heading block */
-.oms-header {
+/* ── Title row: badge icon + heading block ── */
+.sds-title-row {
   display: flex;
-  align-items: flex-start;
-  gap: clamp(16px, 1.56vw, 30px);
-  margin-bottom: clamp(20px, 2.08vw, 40px);
+  align-items: center;
+  gap: clamp(16px, 1.04vw, 20px);
+  margin-bottom: clamp(12px, 1.04vw, 20px);
 }
-.oms-icon {
-  width: clamp(44px, 3.65vw, 70px);
-  height: auto;
+.sds-badge {
+  width: clamp(56px, 4.27vw, 82px);
+  height: clamp(56px, 4.27vw, 82px);
   flex-shrink: 0;
-  margin-top: 4px;
 }
-.oms-heading {
+.sds-title-block { flex: 1; }
+
+.sds-heading {
   font-family: 'Gibson', sans-serif;
   font-weight: 400;
-  font-size: clamp(32px, 4.3vw, 82.5px);
+  font-size: clamp(30px, 4.3vw, 82.56px);
   line-height: 0.935;
-  color: #fff;
-  margin: 0 0 clamp(8px, 0.83vw, 16px);
-}
-.oms-heading em {
-  font-family: 'Instrument Serif', Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
-}
-.oms-subtitle {
-  font-family: 'Gibson', sans-serif;
-  font-weight: 400;
-  font-size: clamp(16px, 1.82vw, 35px);
-  line-height: 1.143;
-  letter-spacing: 0.05em;
   color: #fff;
   margin: 0;
 }
-
-/* Body paragraph */
-.oms-body {
-  font-family: 'Gibson', sans-serif;
+.sds-heading em {
+  font-family: 'Playfair Display', 'Instrument Serif', Georgia, serif;
+  font-style: italic;
   font-weight: 400;
-  font-size: clamp(13px, 1.302vw, 25px);
-  line-height: 1.2;
-  color: #fff;
-  margin-bottom: clamp(30px, 3.125vw, 60px);
 }
 
-/* Feature list: 3-column grid */
-.oms-features {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 clamp(24px, 2.08vw, 40px);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: clamp(12px, 1.25vw, 24px) clamp(20px, 2.08vw, 40px);
-}
-.oms-features li {
-  display: flex;
-  align-items: flex-start;
-  gap: clamp(8px, 0.83vw, 16px);
+.sds-subtitle {
   font-family: 'Gibson', sans-serif;
   font-weight: 400;
-  font-size: clamp(13px, 1.302vw, 25px);
-  line-height: 1.2;
-  color: #fff;
-}
-.oms-features li img {
-  width: clamp(18px, 1.25vw, 24px);
-  height: auto;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-/* Pricing meta line */
-.oms-meta {
-  font-family: 'Gibson', sans-serif;
-  font-weight: 400;
-  font-size: clamp(13px, 1.302vw, 25px);
-  line-height: 1.2;
-  color: #fff;
-  margin-bottom: clamp(30px, 3.125vw, 60px);
-}
-
-/* Orange CTA box */
-.oms-cta {
-  background: #FF7B29;
-  border-radius: clamp(16px, 1.35vw, 26px);
-  padding: clamp(24px, 2.08vw, 40px) clamp(20px, 2.08vw, 40px);
-}
-.oms-cta-text {
-  font-family: 'Gibson', sans-serif;
-  font-weight: 400;
-  font-size: clamp(18px, 1.82vw, 35px);
+  font-size: clamp(16px, 1.823vw, 35px);
   line-height: 1.143;
-  color: #000;
-  margin-bottom: clamp(20px, 1.56vw, 30px);
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin: clamp(6px, 0.52vw, 10px) 0 0;
 }
 
-/* Form layout */
-.oms-form-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: clamp(12px, 1.04vw, 20px);
-  margin-bottom: clamp(12px, 1.04vw, 20px);
+/* ── Body paragraph ── */
+.sds-body {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(13px, 1.302vw, 25px);
+  line-height: 1.2;
+  color: #fff;
+  margin: clamp(16px, 1.25vw, 24px) 0 clamp(24px, 2.08vw, 40px);
 }
-.oms-form-field {
+
+/* ── Feature rows: 2 rows × 3 cols, gap 40px ── */
+.sds-features {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: clamp(16px, 2.08vw, 40px);
+  margin-bottom: clamp(20px, 2.08vw, 40px);
 }
-.oms-form-field label {
+.sds-features-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(16px, 2.08vw, 40px);
+}
+.sds-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(8px, 1.04vw, 20px);
+}
+.sds-check {
+  width: clamp(16px, 1.04vw, 20px);
+  height: clamp(15px, 0.97vw, 18.69px);
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+.sds-feature span {
   font-family: 'Gibson', sans-serif;
-  font-size: clamp(13px, 1.04vw, 20px);
+  font-weight: 400;
+  font-size: clamp(13px, 1.302vw, 25px);
+  line-height: 1.2;
+  color: #fff;
+}
+
+/* ── Meta / pricing line ── */
+.sds-meta {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(13px, 1.302vw, 25px);
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin: 0 0 clamp(24px, 2.08vw, 40px);
+}
+
+/* ── Form box (orange or green) ── */
+.sds-form-box {
+  border-radius: 26px;
+  padding: clamp(24px, 2.08vw, 40px);
+}
+.sds-form-orange { background: #FF7B29; }
+.sds-form-green  { background: #77E7AC; }
+
+.sds-form-heading {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(20px, 1.823vw, 35px);
+  line-height: 1.143;
+  letter-spacing: 0.05em;
+  color: #000;
+  margin: 0 0 clamp(20px, 1.56vw, 30px);
+}
+
+/* 3-column field grid */
+.sds-form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.sds-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.sds-field label {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 1.302vw, 25px);
+  line-height: 1.2;
+  letter-spacing: 0.05em;
   color: #000;
 }
-.oms-form-field input {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #000;
-  padding: 8px 0;
+.sds-field input,
+.sds-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: #fff;
   font-family: 'Gibson', sans-serif;
-  font-size: clamp(13px, 1.04vw, 20px);
+  font-weight: 400;
+  font-size: clamp(13px, 1.042vw, 20px);
+  line-height: 1.5;
+  letter-spacing: 0.05em;
   color: #000;
   outline: none;
 }
-.oms-form-field input::placeholder { color: rgba(0,0,0,0.4); }
+.sds-field input::placeholder,
+.sds-field textarea::placeholder { color: #A5A5A5; }
 
-.oms-submit {
-  display: inline-block;
-  margin-top: clamp(16px, 1.25vw, 24px);
+.sds-field textarea {
+  height: 150px;
+  resize: vertical;
+}
+.sds-field-full { margin-bottom: 20px; }
+
+/* Checkbox row */
+.sds-checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: clamp(16px, 1.25vw, 20px);
+}
+.sds-checkbox-row input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  flex-shrink: 0;
+  accent-color: #000;
+}
+.sds-checkbox-row label {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Submit button */
+.sds-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 18px;
   background: #000;
   color: #fff;
   font-family: 'Gibson', sans-serif;
-  font-size: clamp(14px, 1.04vw, 20px);
-  font-weight: 400;
-  padding: clamp(12px, 0.83vw, 16px) clamp(28px, 2.08vw, 40px);
+  font-weight: 500;
+  font-size: clamp(15px, 1.042vw, 20px);
+  line-height: 1.2;
   border: none;
-  border-radius: 100px;
+  border-radius: 40px;
   cursor: pointer;
   transition: opacity 0.2s;
 }
-.oms-submit:hover { opacity: 0.8; }
+.sds-submit:hover { opacity: 0.8; }
 
 /* =============================================
    RESPONSIVE
@@ -1132,10 +1189,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .safari-card-btns { flex-direction: column; }
   .btn-safari-primary, .btn-safari-secondary { text-align: center; justify-content: center; }
 
-  /* OMS section mobile */
-  .oms-features { grid-template-columns: 1fr; }
-  .oms-form-row { grid-template-columns: 1fr; }
-  .oms-header { flex-direction: column; gap: 12px; }
+  /* SDS section mobile */
+  .sds-features-row { grid-template-columns: 1fr; }
+  .sds-form-grid { grid-template-columns: 1fr; }
+  .sds-title-row { align-items: flex-start; gap: 12px; }
 }
 
 @media (max-width: 600px) {

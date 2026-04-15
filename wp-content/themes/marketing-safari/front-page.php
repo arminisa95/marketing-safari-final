@@ -197,46 +197,185 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     ONLINE MARKETING SAFARI — black detail section
+     ONLINE MARKETING SAFARI SECTION
      ══════════════════════════════════════════ -->
-<section class="oms-section" id="online-marketing-safari">
-  <div class="oms-inner">
+<section class="sds-section" id="online-marketing-safari">
+  <div class="sds-inner">
 
-    <div class="oms-header">
-      <img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt="" class="oms-icon">
-      <div>
-        <h2 class="oms-heading">Online Marketing <em>Safari</em></h2>
-        <p class="oms-subtitle">Der strukturierte Weg zu Reichweite, Leads und planbaren Kunden</p>
+    <div class="sds-title-row">
+      <img src="<?php echo $img; ?>marketingsafari-icon-onlinemarketingsafari.svg" alt="" class="sds-badge">
+      <div class="sds-title-block">
+        <h2 class="sds-heading">Online Marketing <em>Safari</em></h2>
+        <p class="sds-subtitle">Der strukturierte Weg zu Reichweite, Leads und planbaren Kunden</p>
       </div>
     </div>
 
-    <p class="oms-body">Online Marketing fühlt sich oft an wie ein undurchdringlicher Dschungel: zu viele Kanäle, zu viele Tools, zu wenig Überblick. In der Online Marketing Safari bringen wir Ordnung in dieses Chaos und zeigen dir, wie Marketing wirklich funktioniert. Du lernst, welche Maßnahmen für dein Unternehmen Sinn machen – und welche du getrost ignorieren kannst. Statt kurzfristiger Aktionen bekommst du ein klares System, das zu deinem Alltag passt. Wir arbeiten praxisnah, ehrlich und ohne Marketing-Buzzwords. Du setzt direkt um, sammelst echte Erfahrungen und siehst, was Wirkung zeigt. Am Ende der Safari weißt du nicht nur was zu tun ist, sondern auch warum. Und genau das macht den Unterschied zwischen Marketing-Aktionismus und nachhaltigem Wachstum.&shy;</p>
+    <p class="sds-body">Online Marketing fühlt sich oft an wie ein undurchdringlicher Dschungel: zu viele Kanäle, zu viele Tools, zu wenig Überblick. In der Online Marketing Safari bringen wir Ordnung in dieses Chaos und zeigen dir, wie Marketing wirklich funktioniert. Du lernst, welche Maßnahmen für dein Unternehmen Sinn machen – und welche du getrost ignorieren kannst. Statt kurzfristiger Aktionen bekommst du ein klares System, das zu deinem Alltag passt. Wir arbeiten praxisnah, ehrlich und ohne Marketing-Buzzwords. Du setzt direkt um, sammelst echte Erfahrungen und siehst, was Wirkung zeigt. Am Ende der Safari weißt du nicht nur was zu tun ist, sondern auch warum. Und genau das macht den Unterschied zwischen Marketing-Aktionismus und nachhaltigem Wachstum.-</p>
 
-    <ul class="oms-features">
-      <li><img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt=""> Klarer Online-Marketing-Fahrplan statt Einzelmaßnahmen</li>
-      <li><img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt=""> Praxiswissen aus über 14 Jahren Agenturerfahrung</li>
-      <li><img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt=""> Tools, Workflows &amp; KI-Prompts, die Zeit sparen</li>
-      <li><img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt=""> Fokus auf Reichweite, Leads &amp; Kunden – nicht auf Spielereien</li>
-      <li><img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt=""> Umsetzung während des Coachings, nicht erst danach</li>
-      <li><img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt=""> 3 x Live-Event und 3 x Online-Call inklusive</li>
-    </ul>
-
-    <p class="oms-meta">Max. 20 Teilnehmer | 4 Monate | € 4.000 | Start mehrmals pro Jahr</p>
-
-    <div class="oms-cta" id="kontakt">
-      <p class="oms-cta-text">Danach erhältst du einen Link um dir ein<br>kostenloses Info-Gespräch zu vereinbaren.</p>
-      <form class="oms-form" action="#" method="post">
-        <div class="oms-form-row">
-          <div class="oms-form-field"><label>Vorname*</label><input type="text" name="vorname" required></div>
-          <div class="oms-form-field"><label>Nachname*</label><input type="text" name="nachname" required></div>
-          <div class="oms-form-field"><label>Unternehmen*</label><input type="text" name="unternehmen" required></div>
+    <div class="sds-features">
+      <div class="sds-features-row">
+        <div class="sds-feature">
+          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-orange.svg" alt="" class="sds-check">
+          <span>Klarer Online-Marketing-Fahrplan statt Einzelmaßnahmen</span>
         </div>
-        <div class="oms-form-row">
-          <div class="oms-form-field"><label>E-Mail-Adresse*</label><input type="email" name="email" required></div>
-          <div class="oms-form-field"><label>Telefonnummer</label><input type="tel" name="telefon"></div>
-          <div class="oms-form-field"><label>Website</label><input type="url" name="website"></div>
+        <div class="sds-feature">
+          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-orange.svg" alt="" class="sds-check">
+          <span>Praxiswissen aus über 14 Jahren Agenturerfahrung</span>
         </div>
-        <button type="submit" class="oms-submit">Anfrage senden</button>
+        <div class="sds-feature">
+          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-orange.svg" alt="" class="sds-check">
+          <span>Tools, Workflows &amp; KI-Prompts, die Zeit sparen</span>
+        </div>
+      </div>
+      <div class="sds-features-row">
+        <div class="sds-feature">
+          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-orange.svg" alt="" class="sds-check">
+          <span>Fokus auf Reichweite, Leads &amp; Kunden – nicht auf Spielereien</span>
+        </div>
+        <div class="sds-feature">
+          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-orange.svg" alt="" class="sds-check">
+          <span>Umsetzung während des Coachings, nicht erst danach</span>
+        </div>
+        <div class="sds-feature">
+          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-orange.svg" alt="" class="sds-check">
+          <span>3 x Live-Event und 3 x Online-Call inklusive</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="sds-meta">Max. 20 Teilnehmer | 4 Monate | € 4.000 | Start mehrmals pro Jahr</p>
+
+    <div class="sds-form-box sds-form-orange" id="kontakt">
+      <h3 class="sds-form-heading">Danach erhältst du einen Link um dir ein kostenloses Info-Gespräch zu vereinbaren.</h3>
+      <form class="sds-form" action="#" method="post">
+        <div class="sds-form-grid">
+          <div class="sds-field">
+            <label>Vorname*</label>
+            <input type="text" name="vorname" placeholder="Max" required>
+          </div>
+          <div class="sds-field">
+            <label>Nachname*</label>
+            <input type="text" name="nachname" placeholder="Mustermann" required>
+          </div>
+          <div class="sds-field">
+            <label>Unternehmen*</label>
+            <input type="text" name="unternehmen" placeholder="Musterunternehmen" required>
+          </div>
+          <div class="sds-field">
+            <label>E-Mail*</label>
+            <input type="email" name="email" placeholder="max@unternehmen.at" required>
+          </div>
+          <div class="sds-field">
+            <label>Telefon*</label>
+            <input type="tel" name="telefon" placeholder="+43 664 123 456 789" required>
+          </div>
+          <div class="sds-field">
+            <label>Geplantes monatliches Werbebudget</label>
+            <input type="text" name="budget" placeholder="30.000 €">
+          </div>
+        </div>
+        <div class="sds-field sds-field-full">
+          <label>Erzähle uns mehr von dir, deiner Idee oder deinem Unternehmen</label>
+          <textarea name="message" placeholder="Erzähl uns etwas über dich und dein Projekt ..."></textarea>
+        </div>
+        <div class="sds-checkbox-row">
+          <input type="checkbox" id="privacy-oms" name="privacy" required>
+          <label for="privacy-oms">Ich habe die Datenschutzerklärung gelesen und stimme dieser zu.</label>
+        </div>
+        <button type="submit" class="sds-submit">Anfrage absenden</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CONTENT CREATION SAFARI SECTION
+     ══════════════════════════════════════════ -->
+<section class="sds-section" id="content-creation-safari">
+  <div class="sds-inner">
+
+    <div class="sds-title-row">
+      <img src="<?php echo $img; ?>marketingsafari-icon-contentcreationsafari.svg" alt="" class="sds-badge">
+      <div class="sds-title-block">
+        <h2 class="sds-heading">Content Creation <em>Safari</em></h2>
+        <p class="sds-subtitle">Lerne Content zu erstellen, der sichtbar macht, Vertrauen aufbaut und verkauft.</p>
+      </div>
+    </div>
+
+    <p class="sds-body">Guter Content entsteht nicht durch Zufall, sondern durch Klarheit und Struktur. In der Content Creation Safari zeigen wir dir, wie du Inhalte entwickelst, die zu deiner Marke passen und bei deiner Zielgruppe ankommen. Du lernst, wie du Ideen findest, Inhalte planst und Content produzierst, ohne ständig unter Druck zu stehen. Wir räumen mit dem Mythos auf, dass man jedem Trend nachjagen muss, um erfolgreich zu sein. Stattdessen arbeitest du mit klaren Formaten, smarten Workflows und gezieltem Einsatz von KI. Du wirst schneller, sicherer und deutlich wirksamer in deiner Kommunikation. Am Ende hast du nicht nur besseren Content – sondern ein Social Media Game, das du kontrollierst.</p>
+
+    <div class="sds-features">
+      <div class="sds-features-row">
+        <div class="sds-feature">
+          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-gruen.svg" alt="" class="sds-check">
+          <span>Klarer Content-Plan statt Ideenchaos</span>
+        </div>
+        <div class="sds-feature">
+          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-gruen.svg" alt="" class="sds-check">
+          <span>Effiziente Workflows für Social Media &amp; Online-Kanäle</span>
+        </div>
+        <div class="sds-feature">
+          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-gruen.svg" alt="" class="sds-check">
+          <span>Praxisnahe Umsetzung mit direktem Feedback</span>
+        </div>
+      </div>
+      <div class="sds-features-row">
+        <div class="sds-feature">
+          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-gruen.svg" alt="" class="sds-check">
+          <span>Content-Formate, die sichtbar machen und Vertrauen schaffen</span>
+        </div>
+        <div class="sds-feature">
+          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-gruen.svg" alt="" class="sds-check">
+          <span>KI-Prompt-Vorlagen für schnelle Planung der Content-Erstellung</span>
+        </div>
+        <div class="sds-feature">
+          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-gruen.svg" alt="" class="sds-check">
+          <span>Inkl. Guidelines für die Contenterstellung mit dem Smartphone, Praxisanwendungen und Equipmentempfehlungen</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="sds-meta">Max. 20 Teilnehmer | 4 Monate | € 4.000 | Start mehrmals pro Jahr</p>
+
+    <div class="sds-form-box sds-form-green">
+      <h3 class="sds-form-heading">Danach erhältst du einen Link um dir ein kostenloses Info-Gespräch zu vereinbaren.</h3>
+      <form class="sds-form" action="#" method="post">
+        <div class="sds-form-grid">
+          <div class="sds-field">
+            <label>Vorname*</label>
+            <input type="text" name="vorname" placeholder="Max" required>
+          </div>
+          <div class="sds-field">
+            <label>Nachname*</label>
+            <input type="text" name="nachname" placeholder="Mustermann" required>
+          </div>
+          <div class="sds-field">
+            <label>Unternehmen*</label>
+            <input type="text" name="unternehmen" placeholder="Musterunternehmen" required>
+          </div>
+          <div class="sds-field">
+            <label>E-Mail*</label>
+            <input type="email" name="email" placeholder="max@unternehmen.at" required>
+          </div>
+          <div class="sds-field">
+            <label>Telefon*</label>
+            <input type="tel" name="telefon" placeholder="+43 664 123 456 789" required>
+          </div>
+          <div class="sds-field">
+            <label>Geplantes monatliches Werbebudget</label>
+            <input type="text" name="budget" placeholder="30.000 €">
+          </div>
+        </div>
+        <div class="sds-field sds-field-full">
+          <label>Erzähle uns mehr von dir, deiner Idee oder deinem Unternehmen</label>
+          <textarea name="message" placeholder="Erzähl uns etwas über dich und dein Projekt ..."></textarea>
+        </div>
+        <div class="sds-checkbox-row">
+          <input type="checkbox" id="privacy-ccs" name="privacy" required>
+          <label for="privacy-ccs">Ich habe die Datenschutzerklärung gelesen und stimme dieser zu.</label>
+        </div>
+        <button type="submit" class="sds-submit">Anfrage absenden</button>
       </form>
     </div>
 
