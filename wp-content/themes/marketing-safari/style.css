@@ -561,7 +561,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
   padding: 40px;
   border: 1px solid #fff;
   border-radius: 26px;
@@ -570,12 +570,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* Card header: icon left of title */
 .safari-card-header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
 }
 .safari-card-icon {
-  width: clamp(44px, 3.9vw, 64px);
-  height: clamp(44px, 3.9vw, 64px);
+  width: clamp(56px, 5vw, 80px);
+  height: clamp(56px, 5vw, 80px);
   flex-shrink: 0;
 }
 
@@ -584,7 +584,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-family: 'Gibson', sans-serif;
   font-size: clamp(22px, 2.97vw, 57px);
   font-weight: 400;
-  line-height: 0.88;
+  line-height: 1.0;
   color: #fff;
   letter-spacing: 0.05em;
 }
