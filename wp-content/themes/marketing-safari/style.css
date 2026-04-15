@@ -66,7 +66,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   align-items: center;
   justify-content: center;
 }
-/* "by plappermaul": Gibson 25px, rotated */
+/* "by plappermaul": Gibson 25px, rotated — plappermaul is a link */
+.plappermaul-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .hero-green-bar-text {
   font-family: 'Gibson', sans-serif;
   font-size: clamp(11px, 1.3vw, 25px);
@@ -101,7 +106,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: 100%;
   background: #000;
   z-index: 8;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 8.31% 100%);
+  clip-path: polygon(8.15% 0%, 100% 0%, 100% 100%, 16.46% 100%);
 }
 
 /* ── Logo: left 100.2/1920=5.22%, top 30/1080=2.78% ── */
@@ -183,6 +188,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   line-height: 1.14;
   letter-spacing: 0.05em;
   color: #fff;
+  text-align: right;
 }
 
 /* ── Scroll arrow: left 89.44% of overlay, top 87.8% ── */

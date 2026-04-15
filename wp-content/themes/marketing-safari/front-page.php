@@ -8,7 +8,7 @@
 
   <!-- Green bar: 48.59px / 1920 = 2.53% -->
   <div class="hero-green-bar">
-    <span class="hero-green-bar-text">by plappermaul</span>
+    <span class="hero-green-bar-text">by <a href="https://www.plappermaul.at/?utm_source=google&utm_medium=cpc&utm_campaign=brand_search&gad_source=1&gad_campaignid=21494778458&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB7_3-12_r_5oa1bHinor3JTdARfvczcN244YVUSlVAqK1LnrdnsL1QwaAqeKEALw_wcB" target="_blank" rel="noopener" class="plappermaul-link">plappermaul</a></span>
   </div>
 
   <!-- Hero photo: left 2.43%, width 43.57% -->
