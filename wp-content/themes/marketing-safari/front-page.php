@@ -189,6 +189,7 @@
     <h2 class="process-heading">Referenzen aus der Praxis</h2>
     <p class="referenzen-lead">Die Projekte, die wir hier zeigen, haben wir in den vergangenen Jahren als Agentur Plappermaul umgesetzt und begleitet. Sie stehen für echte Herausforderungen, echte Unternehmen und messbare Ergebnisse – nicht für Theorie oder Testcases.</p>
     <p class="referenzen-body">Da die Nachfrage nach unserem Know-how stetig wächst, haben wir uns entschieden, dieses Wissen nicht mehr nur punktuell als Agenturleistung anzubieten. Mit Marketing Safari machen wir unsere Erfahrung erstmals in einem strukturierten Coaching-Programm für eine breitere Zielgruppe zugänglich. Damit du von dem profitierst, was sich in der Praxis hundertfach bewährt hat.</p>
+    <img src="<?php echo $img; ?>referenzen-rectangle.png" alt="Referenzen aus der Praxis" class="referenzen-img">
   </div>
 
 </section>

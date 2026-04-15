@@ -796,6 +796,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: #000;
 }
 
+/* Rectangle 11 — full-width image below referenzen text */
+.referenzen-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: clamp(40px, 5.2vw, 100px);
+}
+
 /* =============================================
    RESPONSIVE
    ============================================= */
