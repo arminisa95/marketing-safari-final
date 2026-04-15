@@ -130,4 +130,61 @@
   </div>
 </section>
 
+<!-- ══════════════════════════════════════════
+     SAFARI PROCESS SECTION — "So läuft deine Safari ab:"
+     ══════════════════════════════════════════ -->
+<section class="safari-process-section" id="safari">
+
+  <div class="container">
+    <h2 class="process-heading">So läuft deine <em>Safari</em> ab:</h2>
+    <p class="process-subheading">Geführt, strukturiert &amp; auf Augenhöhe – mit ein paar wilden Überraschungen und jeder Menge Inspiration.</p>
+    <p class="process-intro">Marketing ist keine einmalige Aktion, sondern eine Reise. Eine Reise, die Klarheit schafft, den Blick schärft und zeigt, welcher Weg wirklich zu deinem Unternehmen passt. Auf der Marketing Safari bist du nicht allein unterwegs: Du wirst begleitet, gefordert und unterstützt – Schritt für Schritt, Station für Station.</p>
+  </div>
+
+  <div class="process-steps">
+
+    <div class="process-step process-step--1">
+      <div class="process-step-inner">
+        <span class="process-step-num">1</span>
+        <span class="process-step-label">Kick-off &amp; Zieldefinition</span>
+        <img src="<?php echo $img; ?>marketingsafari-pfeil-icon.svg" alt="" class="process-step-arrow">
+      </div>
+    </div>
+
+    <div class="process-step process-step--2">
+      <div class="process-step-inner">
+        <span class="process-step-num">2</span>
+        <span class="process-step-label">Gemeinsame Coaching-Termine</span>
+        <img src="<?php echo $img; ?>marketingsafari-pfeil-icon.svg" alt="" class="process-step-arrow">
+      </div>
+    </div>
+
+    <div class="process-step process-step--3">
+      <div class="process-step-inner">
+        <span class="process-step-num">3</span>
+        <span class="process-step-label">Direkte Umsetzung</span>
+        <img src="<?php echo $img; ?>marketingsafari-pfeil-icon.svg" alt="" class="process-step-arrow">
+      </div>
+    </div>
+
+    <div class="process-step process-step--4">
+      <div class="process-step-inner">
+        <span class="process-step-num">4</span>
+        <span class="process-step-label">Feedback &amp; Feinschliff</span>
+        <img src="<?php echo $img; ?>marketingsafari-pfeil-icon.svg" alt="" class="process-step-arrow">
+      </div>
+    </div>
+
+    <div class="process-step process-step--5">
+      <div class="process-step-inner">
+        <span class="process-step-num">5</span>
+        <span class="process-step-label">Selbstständig weitergehen</span>
+        <img src="<?php echo $img; ?>marketingsafari-pfeil-icon.svg" alt="" class="process-step-arrow">
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
 <?php get_footer(); ?>

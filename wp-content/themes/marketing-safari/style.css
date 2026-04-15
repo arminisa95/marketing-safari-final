@@ -650,10 +650,123 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .btn-safari-secondary:hover { opacity: 0.7; }
 
 /* =============================================
+   SAFARI PROCESS SECTION — "So läuft deine Safari ab:"
+   ============================================= */
+.safari-process-section {
+  background: #fff;
+  padding-top: clamp(60px, 5.5vw, 106px);
+}
+
+.process-heading {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(36px, 4.3vw, 82.5px);
+  line-height: 0.935;
+  color: #000;
+  margin-bottom: clamp(16px, 1.5vw, 28px);
+}
+.process-heading em {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.process-subheading {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(16px, 1.82vw, 35px);
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  color: #000;
+  max-width: 900px;
+  margin-bottom: clamp(14px, 1.4vw, 26px);
+}
+
+.process-intro {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(13px, 1.3vw, 25px);
+  line-height: 1.2;
+  color: #000;
+  max-width: 860px;
+  margin-bottom: clamp(40px, 4.5vw, 87px);
+}
+
+/* Full-width steps wrapper */
+.process-steps {
+  width: 100%;
+  border-top: 2px solid #000;
+}
+
+/* Each colored row */
+.process-step {
+  width: 100%;
+  border-bottom: 2px solid #000;
+}
+.process-step:last-child {
+  border-bottom: none;
+}
+
+/* Inner row: mirrors container width/alignment, flex layout */
+.process-step-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(16px, 1.15vw, 22px) 60px;
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 1.5vw, 28px);
+}
+
+/* Row background colors */
+.process-step--1 { background: #FFEF5F; }
+.process-step--2 { background: #77E7AC; }
+.process-step--3 { background: #FF7B29; }
+.process-step--4 { background: #C29AFF; }
+.process-step--5 { background: #71E7FF; }
+
+/* Black circle number badge */
+.process-step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(40px, 3vw, 58px);
+  height: clamp(40px, 3vw, 58px);
+  flex-shrink: 0;
+  background: #000;
+  border-radius: 50%;
+  font-family: 'Gibson', sans-serif;
+  font-weight: 500;
+  font-size: clamp(16px, 1.71vw, 33px);
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+}
+
+/* Step label: Instrument Serif */
+.process-step-label {
+  flex: 1;
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(20px, 2.34vw, 45px);
+  line-height: 1.11;
+  letter-spacing: 0.05em;
+  color: #000;
+}
+
+/* Arrow icon */
+.process-step-arrow {
+  width: clamp(24px, 2.34vw, 45px);
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* =============================================
    RESPONSIVE
    ============================================= */
 @media (max-width: 1200px) {
   .container { padding: 0 40px; }
+  .process-step-inner { padding-left: 40px; padding-right: 40px; }
 }
 
 /* ── Tablet: 769–1024px — layout holds, fonts scale via vw ── */
@@ -774,6 +887,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .intro-feature { padding: 0; padding-top: 32px; border-left: none; border-top: 1px solid rgba(0,0,0,0.15); }
   .intro-feature:first-child { border-top: none; padding-top: 0; }
   .intro-feature-label { font-size: clamp(18px, 5vw, 28px); }
+
+  /* Safari process section */
+  .safari-process-section { padding-top: 48px; }
+  .process-step-inner { padding: 14px 20px; gap: 12px; }
+  .process-step-label { letter-spacing: 0; }
 
   /* Safaris section */
   .safaris-section { padding: 60px 0 80px; }
