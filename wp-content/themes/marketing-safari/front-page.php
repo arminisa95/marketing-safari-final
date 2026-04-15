@@ -416,4 +416,37 @@
   </div>
 </section>
 
+<!-- ══════════════════════════════════════════
+     AUSBILDUNG SECTION
+     Figma canvas 1920×1080px · top 12140.99px
+     ══════════════════════════════════════════ -->
+<section class="ausbildung-section" style="background-image: url('<?php echo $img; ?>marketingsafari-meeting.webp')">
+
+  <h1 class="ausbildung-heading"><em>Ausbildung</em> ist für uns nichts neues</h1>
+
+  <div class="ausbildung-cols">
+
+    <div class="ausbildung-col">
+      <img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt="" class="ausbildung-icon">
+      <p class="ausbildung-col-text">Armin &amp; Markus unterrichten seit über 7 Jahren an der FH OÖ Campus Steyr</p>
+    </div>
+
+    <div class="ausbildung-sep" aria-hidden="true"></div>
+
+    <div class="ausbildung-col">
+      <img src="<?php echo $img; ?>marketingsafari-icon-lila.svg" alt="" class="ausbildung-icon">
+      <p class="ausbildung-col-text">Schwerpunkte: Digitales Marketing &amp; Social Media Marketing</p>
+    </div>
+
+    <div class="ausbildung-sep" aria-hidden="true"></div>
+
+    <div class="ausbildung-col">
+      <img src="<?php echo $img; ?>marketingsafari-icon-gruen.svg" alt="" class="ausbildung-icon">
+      <p class="ausbildung-col-text">kontinuierliche Weiterbildung im eigenen Team</p>
+    </div>
+
+  </div>
+
+</section>
+
 <?php get_footer(); ?>
