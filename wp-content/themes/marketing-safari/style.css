@@ -709,12 +709,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* Inner row: mirrors container width/alignment, flex layout */
 .process-step-inner {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: clamp(16px, 1.15vw, 22px) 60px;
+  padding: clamp(14px, 0.94vw, 18px) 60px;
   display: flex;
   align-items: center;
-  gap: clamp(16px, 1.5vw, 28px);
+  gap: clamp(14px, 1.46vw, 28px);
 }
 
 /* Row background colors */
@@ -766,7 +767,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    ============================================= */
 @media (max-width: 1200px) {
   .container { padding: 0 40px; }
-  .process-step-inner { padding-left: 40px; padding-right: 40px; }
+  .process-step-inner { max-width: 100%; padding-left: 40px; padding-right: 40px; }
 }
 
 /* ── Tablet: 769–1024px — layout holds, fonts scale via vw ── */
