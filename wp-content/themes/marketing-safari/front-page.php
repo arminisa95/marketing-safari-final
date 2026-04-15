@@ -98,7 +98,7 @@
       <!-- Card 1: Online Marketing Safari -->
       <div class="safari-card">
         <div class="safari-card-header">
-          <img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt="" class="safari-card-icon">
+          <img src="<?php echo $img; ?>marketingsafari-icon-onlinemarketingsafari.svg" alt="" class="safari-card-icon">
           <h3 class="safari-card-title">Online Marketing <em>Safari</em></h3>
         </div>
         <p class="safari-card-tagline">4 Monate. Mehr Reichweite, mehr Leads, mehr Kunden – mit System.</p>
@@ -113,7 +113,7 @@
       <!-- Card 2: Content Creation Safari -->
       <div class="safari-card">
         <div class="safari-card-header">
-          <img src="<?php echo $img; ?>marketingsafari-icon-gruen.svg" alt="" class="safari-card-icon">
+          <img src="<?php echo $img; ?>marketingsafari-icon-contentcreationsafari.svg" alt="" class="safari-card-icon">
           <h3 class="safari-card-title">Content Creation <em>Safari</em></h3>
         </div>
         <p class="safari-card-tagline">4 Monate. Content, der sichtbar macht, Vertrauen aufbaut und verkauft.</p>
