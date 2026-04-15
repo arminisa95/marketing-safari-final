@@ -1398,7 +1398,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .anspruch-stripe {
   width: 100%;
   box-sizing: border-box;
-  padding: 22px clamp(20px, 5.22vw, 100px) 22px clamp(20px, 5.31vw, 102px);
+  padding: 16px clamp(20px, 5.22vw, 100px) 16px clamp(20px, 5.31vw, 102px);
   border-bottom: 2px solid #000;
   display: flex;
   align-items: center;
