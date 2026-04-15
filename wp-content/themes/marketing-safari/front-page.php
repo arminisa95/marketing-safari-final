@@ -196,4 +196,51 @@
 
 </section>
 
+<!-- ══════════════════════════════════════════
+     ONLINE MARKETING SAFARI — black detail section
+     ══════════════════════════════════════════ -->
+<section class="oms-section" id="online-marketing-safari">
+  <div class="oms-inner">
+
+    <div class="oms-header">
+      <img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt="" class="oms-icon">
+      <div>
+        <h2 class="oms-heading">Online Marketing <em>Safari</em></h2>
+        <p class="oms-subtitle">Der strukturierte Weg zu Reichweite, Leads und planbaren Kunden</p>
+      </div>
+    </div>
+
+    <p class="oms-body">Online Marketing fühlt sich oft an wie ein undurchdringlicher Dschungel: zu viele Kanäle, zu viele Tools, zu wenig Überblick. In der Online Marketing Safari bringen wir Ordnung in dieses Chaos und zeigen dir, wie Marketing wirklich funktioniert. Du lernst, welche Maßnahmen für dein Unternehmen Sinn machen – und welche du getrost ignorieren kannst. Statt kurzfristiger Aktionen bekommst du ein klares System, das zu deinem Alltag passt. Wir arbeiten praxisnah, ehrlich und ohne Marketing-Buzzwords. Du setzt direkt um, sammelst echte Erfahrungen und siehst, was Wirkung zeigt. Am Ende der Safari weißt du nicht nur was zu tun ist, sondern auch warum. Und genau das macht den Unterschied zwischen Marketing-Aktionismus und nachhaltigem Wachstum.&shy;</p>
+
+    <ul class="oms-features">
+      <li><img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt=""> Klarer Online-Marketing-Fahrplan statt Einzelmaßnahmen</li>
+      <li><img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt=""> Praxiswissen aus über 14 Jahren Agenturerfahrung</li>
+      <li><img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt=""> Tools, Workflows &amp; KI-Prompts, die Zeit sparen</li>
+      <li><img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt=""> Fokus auf Reichweite, Leads &amp; Kunden – nicht auf Spielereien</li>
+      <li><img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt=""> Umsetzung während des Coachings, nicht erst danach</li>
+      <li><img src="<?php echo $img; ?>marketingsafari-icon-orange.svg" alt=""> 3 x Live-Event und 3 x Online-Call inklusive</li>
+    </ul>
+
+    <p class="oms-meta">Max. 20 Teilnehmer | 4 Monate | € 4.000 | Start mehrmals pro Jahr</p>
+
+    <div class="oms-cta" id="kontakt">
+      <p class="oms-cta-text">Danach erhältst du einen Link um dir ein<br>kostenloses Info-Gespräch zu vereinbaren.</p>
+      <form class="oms-form" action="#" method="post">
+        <div class="oms-form-row">
+          <div class="oms-form-field"><label>Vorname*</label><input type="text" name="vorname" required></div>
+          <div class="oms-form-field"><label>Nachname*</label><input type="text" name="nachname" required></div>
+          <div class="oms-form-field"><label>Unternehmen*</label><input type="text" name="unternehmen" required></div>
+        </div>
+        <div class="oms-form-row">
+          <div class="oms-form-field"><label>E-Mail-Adresse*</label><input type="email" name="email" required></div>
+          <div class="oms-form-field"><label>Telefonnummer</label><input type="tel" name="telefon"></div>
+          <div class="oms-form-field"><label>Website</label><input type="url" name="website"></div>
+        </div>
+        <button type="submit" class="oms-submit">Anfrage senden</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
 <?php get_footer(); ?>

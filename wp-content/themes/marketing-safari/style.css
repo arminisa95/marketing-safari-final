@@ -101,7 +101,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: 100%;
   background: #000;
   z-index: 8;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10.04% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 8.31% 100%);
 }
 
 /* ── Logo: left 100.2/1920=5.22%, top 30/1080=2.78% ── */
@@ -826,6 +826,159 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* =============================================
+   ONLINE MARKETING SAFARI — black detail section
+   ============================================= */
+.oms-section {
+  background: #000;
+  color: #fff;
+}
+.oms-inner {
+  padding: clamp(40px, 3.125vw, 60px) clamp(20px, 5.22vw, 100px) clamp(40px, 3.125vw, 60px);
+}
+
+/* Header row: icon + heading block */
+.oms-header {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(16px, 1.56vw, 30px);
+  margin-bottom: clamp(20px, 2.08vw, 40px);
+}
+.oms-icon {
+  width: clamp(44px, 3.65vw, 70px);
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.oms-heading {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(32px, 4.3vw, 82.5px);
+  line-height: 0.935;
+  color: #fff;
+  margin: 0 0 clamp(8px, 0.83vw, 16px);
+}
+.oms-heading em {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.oms-subtitle {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(16px, 1.82vw, 35px);
+  line-height: 1.143;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin: 0;
+}
+
+/* Body paragraph */
+.oms-body {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(13px, 1.302vw, 25px);
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: clamp(30px, 3.125vw, 60px);
+}
+
+/* Feature list: 3-column grid */
+.oms-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 clamp(24px, 2.08vw, 40px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(12px, 1.25vw, 24px) clamp(20px, 2.08vw, 40px);
+}
+.oms-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(8px, 0.83vw, 16px);
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(13px, 1.302vw, 25px);
+  line-height: 1.2;
+  color: #fff;
+}
+.oms-features li img {
+  width: clamp(18px, 1.25vw, 24px);
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Pricing meta line */
+.oms-meta {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(13px, 1.302vw, 25px);
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: clamp(30px, 3.125vw, 60px);
+}
+
+/* Orange CTA box */
+.oms-cta {
+  background: #FF7B29;
+  border-radius: clamp(16px, 1.35vw, 26px);
+  padding: clamp(24px, 2.08vw, 40px) clamp(20px, 2.08vw, 40px);
+}
+.oms-cta-text {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(18px, 1.82vw, 35px);
+  line-height: 1.143;
+  color: #000;
+  margin-bottom: clamp(20px, 1.56vw, 30px);
+}
+
+/* Form layout */
+.oms-form-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(12px, 1.04vw, 20px);
+  margin-bottom: clamp(12px, 1.04vw, 20px);
+}
+.oms-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.oms-form-field label {
+  font-family: 'Gibson', sans-serif;
+  font-size: clamp(13px, 1.04vw, 20px);
+  color: #000;
+}
+.oms-form-field input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 8px 0;
+  font-family: 'Gibson', sans-serif;
+  font-size: clamp(13px, 1.04vw, 20px);
+  color: #000;
+  outline: none;
+}
+.oms-form-field input::placeholder { color: rgba(0,0,0,0.4); }
+
+.oms-submit {
+  display: inline-block;
+  margin-top: clamp(16px, 1.25vw, 24px);
+  background: #000;
+  color: #fff;
+  font-family: 'Gibson', sans-serif;
+  font-size: clamp(14px, 1.04vw, 20px);
+  font-weight: 400;
+  padding: clamp(12px, 0.83vw, 16px) clamp(28px, 2.08vw, 40px);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.oms-submit:hover { opacity: 0.8; }
+
+/* =============================================
    RESPONSIVE
    ============================================= */
 @media (max-width: 1200px) {
@@ -968,6 +1121,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .safari-card { padding: 28px 20px; }
   .safari-card-btns { flex-direction: column; }
   .btn-safari-primary, .btn-safari-secondary { text-align: center; justify-content: center; }
+
+  /* OMS section mobile */
+  .oms-features { grid-template-columns: 1fr; }
+  .oms-form-row { grid-template-columns: 1fr; }
+  .oms-header { flex-direction: column; gap: 12px; }
 }
 
 @media (max-width: 600px) {
