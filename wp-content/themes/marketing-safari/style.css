@@ -1356,6 +1356,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: clamp(24px, 2.76vw, 53px);
 }
 
+@media (min-width: 1025px) {
+  .anspruch-section {
+    padding-top: clamp(64px, 5.21vw, 100px);
+  }
+
+  .anspruch-content {
+    margin-bottom: clamp(36px, 3.65vw, 70px);
+  }
+}
+
 .anspruch-heading {
   font-family: 'Gibson', sans-serif;
   font-weight: 400;
