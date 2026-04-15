@@ -804,6 +804,27 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-top: clamp(40px, 5.2vw, 100px);
 }
 
+/* Caption below Rectangle 11 — Gibson 25px / line-height 30px / letter-spacing 0.05em
+   Figma gap between Rectangle 11 bottom and caption top ≈ 5px */
+.referenzen-caption {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 1.302vw, 25px);
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: #000;
+  margin-top: clamp(4px, 0.26vw, 5px);
+  margin-bottom: 0;
+}
+
+/* Group 9 — full-width image below caption */
+.referenzen-group9 {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: clamp(20px, 2.08vw, 40px);
+}
+
 /* =============================================
    RESPONSIVE
    ============================================= */
