@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 <?php $img = get_template_directory_uri() . '/images/'; ?>
 
-<!-- ══════════════════════════════════════════
-     HERO — 1920×1080 Figma pixel-accurate
-     ══════════════════════════════════════════ -->
+<!-- Hero -->
 <section class="hero-section" id="hero">
 
   <!-- Green bar: 48.59px / 1920 = 2.53% -->
@@ -50,9 +48,7 @@
 
 </section>
 
-<!-- ══════════════════════════════════════════
-     TEXT INTRO
-     ══════════════════════════════════════════ -->
+<!-- Text intro -->
 <section class="text-intro-section" id="intro">
   <div class="container">
 
@@ -76,22 +72,18 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     YELLOW WAVE BANNER
-     ══════════════════════════════════════════ -->
+<!-- Yellow wave banner -->
 <div class="yellow-wave-banner">
   <img src="<?php echo $img; ?>yellow-wave-banner.png" alt="Marketing, das seinen Weg kennt. Wir jagen keine Likes. Wir gewinnen Kunden.">
 </div>
 
-<!-- ══════════════════════════════════════════
-     ZWEI SAFARIS SECTION
-     ══════════════════════════════════════════ -->
+<!-- Zwei Safaris -->
 <section class="safaris-section" id="leistungen">
   <div class="container">
 
     <h2 class="safaris-heading">Zwei Safaris, ein <em>Ziel:</em></h2>
     <p class="safaris-subtitle">Souveränes Marketing</p>
-    <p class="safaris-intro">Du weißt, dass Marketing wichtig ist – aber dir fehlt der klare Weg. Marketing kostet Zeit, Nerven und Geld. Gute Agenturen sind in der Situation preislich noch nicht möglich. Social Media fühlt sich wie Beschäftigungstherapie an. Weil die nötige Orientierung und der Fokus fehlt.</p>
+    <p class="safaris-intro">Du weißt, dass Marketing wichtig ist – aber dir fehlt der klare Weg.<br>Marketing kostet Zeit, Nerven und Geld.<br>Gute Agenturen sind in der Situation preislich noch nicht möglich.<br>Social Media fühlt sich wie Beschäftigungstherapie an.<br>Weil die nötige Orientierung und der Fokus fehlt.</p>
 
     <div class="safari-cards">
 
@@ -130,9 +122,7 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     SAFARI PROCESS SECTION — "So läuft deine Safari ab:"
-     ══════════════════════════════════════════ -->
+<!-- Safari process -->
 <section class="safari-process-section" id="safari">
 
   <div class="process-content">
@@ -210,9 +200,7 @@
 
 </section>
 
-<!-- ══════════════════════════════════════════
-     ONLINE MARKETING SAFARI SECTION
-     ══════════════════════════════════════════ -->
+<!-- Online Marketing Safari -->
 <section class="sds-section" id="online-marketing-safari">
   <div class="sds-inner">
 
@@ -303,9 +291,7 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     CONTENT CREATION SAFARI SECTION
-     ══════════════════════════════════════════ -->
+<!-- Content Creation Safari -->
 <section class="sds-section" id="content-creation-safari">
   <div class="sds-inner">
 
@@ -396,10 +382,7 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     WARUM ES MARKETING SAFARI GIBT SECTION
-     Figma canvas 1920px · top 11275.77px
-     ══════════════════════════════════════════ -->
+<!-- Warum es Marketing Safari gibt -->
 <section class="warum-section">
   <div class="warum-content">
 
@@ -430,10 +413,7 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     AUSBILDUNG SECTION
-     Figma canvas 1920×1080px · top 12140.99px
-     ══════════════════════════════════════════ -->
+<!-- Ausbildung -->
 <section class="ausbildung-section" style="background-image: url('<?php echo $img; ?>marketingsafari-meeting.webp')">
 
   <h1 class="ausbildung-heading"><em>Ausbildung</em> ist für uns nichts neues</h1>
@@ -463,10 +443,7 @@
 
 </section>
 
-<!-- ══════════════════════════════════════════
-     UNSER ANSPRUCH SECTION
-     Figma canvas 1920px · top 13455.38px
-     ══════════════════════════════════════════ -->
+<!-- Unser Anspruch -->
 <section class="anspruch-section">
   <div class="anspruch-content">
     <h2 class="anspruch-heading">Unser <em>Anspruch</em></h2>
@@ -488,10 +465,7 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     3-PHOTO GALLERY
-     Figma canvas 1920px · after Unser Anspruch
-     ══════════════════════════════════════════ -->
+<!-- 3-photo gallery -->
 <section class="gallery3-section">
   <div class="gallery3-grid">
     <img src="<?php echo $img; ?>marketingsafari-slider-1-1.webp" alt="">
@@ -500,19 +474,13 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     GALLERY NAV — two orange arrow buttons
-     Figma: Group 11 (left) + Group 12 (right)
-     White area between photos and yellow banner
-     ══════════════════════════════════════════ -->
+<!-- Gallery navigation -->
 <div class="gallery-nav">
   <img src="<?php echo $img; ?>group11-arrow-left.svg" alt="" class="gallery-nav-arrow" aria-hidden="true">
   <img src="<?php echo $img; ?>group12-arrow-right.svg" alt="" class="gallery-nav-arrow" aria-hidden="true">
 </div>
 
-<!-- ══════════════════════════════════════════
-     BOTTOM YELLOW WAVE BANNER (Group 10.png)
-     ══════════════════════════════════════════ -->
+<!-- Bottom yellow wave banner -->
 <div class="yellow-wave-banner">
   <img src="<?php echo $img; ?>group10-yellow-banner.png" alt="Mit Marketing Safari - nie den Überblick zwischen Content-Ideen, Anzeigen und Tools verlieren.">
 </div>
