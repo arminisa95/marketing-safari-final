@@ -1322,6 +1322,28 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* =============================================
+   3-PHOTO GALLERY SECTION
+   ============================================= */
+.gallery3-section {
+  background: #FFFFFF;
+  padding: clamp(40px, 4.17vw, 80px) clamp(20px, 5.22vw, 100px);
+}
+.gallery3-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(8px, 0.78vw, 15px);
+}
+.gallery3-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .gallery3-grid { grid-template-columns: 1fr; gap: 12px; }
+}
+
+/* =============================================
    RESPONSIVE
    ============================================= */
 @media (max-width: 1200px) {

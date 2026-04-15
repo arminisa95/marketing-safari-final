@@ -474,4 +474,16 @@
   </div>
 </section>
 
+<!-- ══════════════════════════════════════════
+     3-PHOTO GALLERY
+     Figma canvas 1920px · after Unser Anspruch
+     ══════════════════════════════════════════ -->
+<section class="gallery3-section">
+  <div class="gallery3-grid">
+    <img src="<?php echo $img; ?>marketingsafari-slider-1-1.webp" alt="">
+    <img src="<?php echo $img; ?>marketingsafari-slider-1-2.webp" alt="">
+    <img src="<?php echo $img; ?>marketingsafari-slider-1-3.webp" alt="">
+  </div>
+</section>
+
 <?php get_footer(); ?>
