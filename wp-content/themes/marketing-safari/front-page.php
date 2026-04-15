@@ -449,4 +449,29 @@
 
 </section>
 
+<!-- ══════════════════════════════════════════
+     UNSER ANSPRUCH SECTION
+     Figma canvas 1920px · top 13455.38px
+     ══════════════════════════════════════════ -->
+<section class="anspruch-section">
+  <div class="anspruch-content">
+    <h2 class="anspruch-heading">Unser <em>Anspruch</em></h2>
+    <p class="anspruch-body">Marketing Safari ist kein Ersatz für Agenturarbeit.<br>Es ist die richtige Lösung für Unternehmer, die ihren eigenen Weg im Marketing bewusst selbst gehen wollen.</p>
+  </div>
+  <div class="anspruch-stripes">
+    <div class="anspruch-stripe anspruch-yellow">
+      <span>keine schnellen Online-Kurse ohne Substanz</span>
+    </div>
+    <div class="anspruch-stripe anspruch-green">
+      <span>keine Videos zum Durchklicken</span>
+    </div>
+    <div class="anspruch-stripe anspruch-orange">
+      <span>echte Live-Erfahrung, Austausch und Umsetzung</span>
+    </div>
+    <div class="anspruch-stripe anspruch-cyan">
+      <span>Begleitung auf Augenhöhe</span>
+    </div>
+  </div>
+</section>
+
 <?php get_footer(); ?>

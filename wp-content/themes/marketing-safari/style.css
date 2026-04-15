@@ -1243,6 +1243,85 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* =============================================
+   UNSER ANSPRUCH SECTION
+   Figma canvas 1920px · top 13455.38px
+   White bg · heading + body · 4 color stripes
+   ============================================= */
+.anspruch-section {
+  background: #FFFFFF;
+  padding: clamp(40px, 4.17vw, 80px) 0 0;
+}
+
+.anspruch-content {
+  padding: 0 clamp(20px, 5.22vw, 100px);
+  margin-bottom: clamp(24px, 2.76vw, 53px);
+}
+
+/* "Unser" Gibson + "Anspruch" Instrument Serif italic */
+.anspruch-heading {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(32px, 4.3vw, 82.56px);
+  line-height: 0.934;
+  color: #000000;
+  margin: 0 0 clamp(10px, 0.9vw, 17px);
+}
+.anspruch-heading em {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Body: Gibson 35px/40px ls 0.05em */
+.anspruch-body {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(15px, 1.823vw, 35px);
+  line-height: 1.143;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin: 0;
+}
+
+/* Stripes container: top border + stacked rows */
+.anspruch-stripes {
+  width: 100%;
+  border-top: 2px solid #000;
+}
+
+/* Each stripe: Figma 94px height = 22px padding top+bottom + 50px text */
+.anspruch-stripe {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 22px clamp(20px, 5.22vw, 100px) 22px clamp(20px, 5.31vw, 102px);
+  border-bottom: 2px solid #000;
+  display: flex;
+  align-items: center;
+}
+.anspruch-stripe:last-child { border-bottom: none; }
+
+.anspruch-yellow { background: #FFEF5F; }
+.anspruch-green  { background: #77E7AC; }
+.anspruch-orange { background: #FF7B29; }
+.anspruch-cyan   { background: #71E7FF; }
+
+/* Stripe text: Instrument Serif 45px/50px ls 0.05em */
+.anspruch-stripe span {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(18px, 2.344vw, 45px);
+  line-height: 1.111;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .anspruch-section { padding-top: 40px; }
+  .anspruch-content { padding: 0 20px; }
+  .anspruch-stripe { padding-left: 20px; padding-right: 20px; }
+}
+
+/* =============================================
    RESPONSIVE
    ============================================= */
 @media (max-width: 1200px) {
