@@ -1,5 +1,62 @@
 <?php get_header(); ?>
-<?php $img = get_template_directory_uri() . '/images/'; ?>
+<?php
+$img = ms_image_url();
+
+$safari_detail_sections = [
+    [
+        'section_id' => 'online-marketing-safari',
+        'badge_icon' => 'marketingsafari-icon-onlinemarketingsafari.svg',
+        'badge_alt' => 'Online Marketing Safari',
+        'heading' => 'Online Marketing <em>Safari</em>',
+        'subtitle' => ms_content('oms_subtitle', 'Der strukturierte Weg zu Reichweite, Leads und planbaren Kunden'),
+        'body' => ms_content('oms_body', 'Online Marketing fühlt sich oft an wie ein undurchdringlicher Dschungel: zu viele Kanäle, zu viele Tools, zu wenig Überblick. In der Online Marketing Safari bringen wir Ordnung in dieses Chaos und zeigen dir, wie Marketing wirklich funktioniert. Du lernst, welche Maßnahmen für dein Unternehmen Sinn machen – und welche du getrost ignorieren kannst. Statt kurzfristiger Aktionen bekommst du ein klares System, das zu deinem Alltag passt. Wir arbeiten praxisnah, ehrlich und ohne Marketing-Buzzwords. Du setzt direkt um, sammelst echte Erfahrungen und siehst, was Wirkung zeigt. Am Ende der Safari weißt du nicht nur was zu tun ist, sondern auch warum. Und genau das macht den Unterschied zwischen Marketing-Aktionismus und nachhaltigem Wachstum.'),
+        'feature_icon' => 'marketingsafari-aufzaehlungsicon-orange.svg',
+        'feature_rows' => [
+            [
+                'Klarer Online-Marketing-Fahrplan statt Einzelmaßnahmen',
+                'Praxiswissen aus über 14 Jahren Agenturerfahrung',
+                'Tools, Workflows & KI-Prompts, die Zeit sparen',
+            ],
+            [
+                'Fokus auf Reichweite, Leads & Kunden – nicht auf Spielereien',
+                'Umsetzung während des Coachings, nicht erst danach',
+                '3 x Live-Event und 3 x Online-Call inklusive',
+            ],
+        ],
+        'meta' => ms_content('oms_meta', 'Max. 20 Teilnehmer | 4 Monate | € 4.000 | Start mehrmals pro Jahr'),
+        'form_variant' => 'orange',
+        'form_anchor_id' => 'kontakt',
+        'privacy_id' => 'privacy-oms',
+        'form_heading' => ms_content('oms_form_heading', 'Danach erhältst du einen Link um dir ein kostenloses Info-Gespräch zu vereinbaren.'),
+    ],
+    [
+        'section_id' => 'content-creation-safari',
+        'badge_icon' => 'marketingsafari-icon-contentcreationsafari.svg',
+        'badge_alt' => 'Content Creation Safari',
+        'heading' => 'Content Creation <em>Safari</em>',
+        'subtitle' => ms_content('ccs_subtitle', 'Lerne Content zu erstellen, der sichtbar macht, Vertrauen aufbaut und verkauft.'),
+        'body' => ms_content('ccs_body', 'Guter Content entsteht nicht durch Zufall, sondern durch Klarheit und Struktur. In der Content Creation Safari zeigen wir dir, wie du Inhalte entwickelst, die zu deiner Marke passen und bei deiner Zielgruppe ankommen. Du lernst, wie du Ideen findest, Inhalte planst und Content produzierst, ohne ständig unter Druck zu stehen. Wir räumen mit dem Mythos auf, dass man jedem Trend nachjagen muss, um erfolgreich zu sein. Stattdessen arbeitest du mit klaren Formaten, smarten Workflows und gezieltem Einsatz von KI. Du wirst schneller, sicherer und deutlich wirksamer in deiner Kommunikation. Am Ende hast du nicht nur besseren Content – sondern ein Social Media Game, das du kontrollierst.'),
+        'feature_icon' => 'marketingsafari-aufzaehlungsicon-gruen.svg',
+        'feature_rows' => [
+            [
+                'Klarer Content-Plan statt Ideenchaos',
+                'Effiziente Workflows für Social Media & Online-Kanäle',
+                'Praxisnahe Umsetzung mit direktem Feedback',
+            ],
+            [
+                'Content-Formate, die sichtbar machen und Vertrauen schaffen',
+                'KI-Prompt-Vorlagen für schnelle Planung der Content-Erstellung',
+                'Inkl. Guidelines für die Contenterstellung mit dem Smartphone, Praxisanwendungen und Equipmentempfehlungen',
+            ],
+        ],
+        'meta' => ms_content('ccs_meta', 'Max. 20 Teilnehmer | 4 Monate | € 4.000 | Start mehrmals pro Jahr'),
+        'form_variant' => 'green',
+        'form_anchor_id' => '',
+        'privacy_id' => 'privacy-ccs',
+        'form_heading' => ms_content('ccs_form_heading', 'Danach erhältst du einen Link um dir ein kostenloses Info-Gespräch zu vereinbaren.'),
+    ],
+];
+?>
 
 <!-- Hero -->
 <section class="hero-section" id="hero">
@@ -176,211 +233,20 @@
   </div>
 
   <div class="process-content referenzen-block">
-    <h2 class="process-heading">Referenzen<br>aus der <em>Praxis</em></h2>
+    <h2 class="process-heading">Referenzen<br>aus der <em>Praxis</em>:</h2>
     <p class="referenzen-lead">Die Projekte, die wir hier zeigen, haben wir in den vergangenen Jahren als Agentur Plappermaul<br>umgesetzt und begleitet. Sie stehen für echte Herausforderungen, echte Unternehmen und messbare<br>Ergebnisse – nicht für Theorie oder Testcases.</p>
     <p class="referenzen-body">Da die Nachfrage nach unserem Know-how stetig wächst, haben wir uns entschieden, dieses Wissen nicht mehr nur punktuell als Agenturleistung anzubieten. Mit Marketing Safari machen wir unsere Erfahrung erstmals in einem strukturierten Coaching-Programm für eine breitere Zielgruppe zugänglich. Damit du von dem profitierst, was sich in der Praxis hundertfach bewährt hat.</p>
     <img src="<?php echo $img; ?>referenzen-rectangle.png" alt="Referenzen aus der Praxis" class="referenzen-img">
     <p class="referenzen-caption">Online Marketing<br>Pelviqueens</p>
     <img src="<?php echo $img; ?>referenzen-group9.png" alt="Content Creation Referenzen" class="referenzen-group9">
-    <div class="referenzen-group9-captions">
-      <div class="referenzen-group9-caption">
-        <p>Content Creation</p>
-        <p>Stadtgemeinde Bad Hall</p>
-      </div>
-      <div class="referenzen-group9-caption">
-        <p>Content Creation</p>
-        <p>Modehaus Kutsam</p>
-      </div>
-      <div class="referenzen-group9-caption">
-        <p>Content Creation</p>
-        <p>Tourismusverband Attersee-Attergau</p>
-      </div>
-    </div>
+    
   </div>
 
 </section>
 
-<!-- Online Marketing Safari -->
-<section class="sds-section" id="online-marketing-safari">
-  <div class="sds-inner">
-
-    <div class="sds-title-row">
-      <img src="<?php echo $img; ?>marketingsafari-icon-onlinemarketingsafari.svg" alt="" class="sds-badge">
-      <div class="sds-title-block">
-        <h2 class="sds-heading">Online Marketing <em>Safari</em></h2>
-        <p class="sds-subtitle">Der strukturierte Weg zu Reichweite, Leads und planbaren Kunden</p>
-      </div>
-    </div>
-
-    <p class="sds-body">Online Marketing fühlt sich oft an wie ein undurchdringlicher Dschungel: zu viele Kanäle, zu viele Tools, zu wenig Überblick. In der Online Marketing Safari bringen wir Ordnung in dieses Chaos und zeigen dir, wie Marketing wirklich funktioniert. Du lernst, welche Maßnahmen für dein Unternehmen Sinn machen – und welche du getrost ignorieren kannst. Statt kurzfristiger Aktionen bekommst du ein klares System, das zu deinem Alltag passt. Wir arbeiten praxisnah, ehrlich und ohne Marketing-Buzzwords. Du setzt direkt um, sammelst echte Erfahrungen und siehst, was Wirkung zeigt. Am Ende der Safari weißt du nicht nur was zu tun ist, sondern auch warum. Und genau das macht den Unterschied zwischen Marketing-Aktionismus und nachhaltigem Wachstum.</p>
-
-    <div class="sds-features">
-      <div class="sds-features-row">
-        <div class="sds-feature">
-          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-orange.svg" alt="" class="sds-check">
-          <span>Klarer Online-Marketing-Fahrplan statt Einzelmaßnahmen</span>
-        </div>
-        <div class="sds-feature">
-          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-orange.svg" alt="" class="sds-check">
-          <span>Praxiswissen aus über 14 Jahren Agenturerfahrung</span>
-        </div>
-        <div class="sds-feature">
-          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-orange.svg" alt="" class="sds-check">
-          <span>Tools, Workflows &amp; KI-Prompts, die Zeit sparen</span>
-        </div>
-      </div>
-      <div class="sds-features-row">
-        <div class="sds-feature">
-          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-orange.svg" alt="" class="sds-check">
-          <span>Fokus auf Reichweite, Leads &amp; Kunden – nicht auf Spielereien</span>
-        </div>
-        <div class="sds-feature">
-          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-orange.svg" alt="" class="sds-check">
-          <span>Umsetzung während des Coachings, nicht erst danach</span>
-        </div>
-        <div class="sds-feature">
-          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-orange.svg" alt="" class="sds-check">
-          <span>3 x Live-Event und 3 x Online-Call inklusive</span>
-        </div>
-      </div>
-    </div>
-
-    <p class="sds-meta">Max. 20 Teilnehmer | 4 Monate | € 4.000 | Start mehrmals pro Jahr</p>
-
-    <div class="sds-form-box sds-form-orange" id="kontakt">
-      <h3 class="sds-form-heading">Danach erhältst du einen Link um dir ein kostenloses Info-Gespräch zu vereinbaren.</h3>
-      <form class="sds-form" action="#" method="post">
-        <div class="sds-form-grid">
-          <div class="sds-field">
-            <label>Vorname*</label>
-            <input type="text" name="vorname" placeholder="Max" required>
-          </div>
-          <div class="sds-field">
-            <label>Nachname*</label>
-            <input type="text" name="nachname" placeholder="Mustermann" required>
-          </div>
-          <div class="sds-field">
-            <label>Unternehmen*</label>
-            <input type="text" name="unternehmen" placeholder="Musterunternehmen" required>
-          </div>
-          <div class="sds-field">
-            <label>E-Mail*</label>
-            <input type="email" name="email" placeholder="max@unternehmen.at" required>
-          </div>
-          <div class="sds-field">
-            <label>Telefon*</label>
-            <input type="tel" name="telefon" placeholder="+43 664 123 456 789" required>
-          </div>
-          <div class="sds-field">
-            <label>Geplantes monatliches Werbebudget</label>
-            <input type="text" name="budget" placeholder="30.000 €">
-          </div>
-        </div>
-        <div class="sds-field sds-field-full">
-          <label>Erzähle uns mehr von dir, deiner Idee oder deinem Unternehmen</label>
-          <textarea name="message" placeholder="Erzähl uns etwas über dich und dein Projekt ..."></textarea>
-        </div>
-        <div class="sds-checkbox-row">
-          <input type="checkbox" id="privacy-oms" name="privacy" required>
-          <label for="privacy-oms">Ich habe die Datenschutzerklärung gelesen und stimme dieser zu.</label>
-        </div>
-        <button type="submit" class="sds-submit">Anfrage absenden</button>
-      </form>
-    </div>
-
-  </div>
-</section>
-
-<!-- Content Creation Safari -->
-<section class="sds-section" id="content-creation-safari">
-  <div class="sds-inner">
-
-    <div class="sds-title-row">
-      <img src="<?php echo $img; ?>marketingsafari-icon-contentcreationsafari.svg" alt="" class="sds-badge">
-      <div class="sds-title-block">
-        <h2 class="sds-heading">Content Creation <em>Safari</em></h2>
-        <p class="sds-subtitle">Lerne Content zu erstellen, der sichtbar macht, Vertrauen aufbaut und verkauft.</p>
-      </div>
-    </div>
-
-    <p class="sds-body">Guter Content entsteht nicht durch Zufall, sondern durch Klarheit und Struktur. In der Content Creation Safari zeigen wir dir, wie du Inhalte entwickelst, die zu deiner Marke passen und bei deiner Zielgruppe ankommen. Du lernst, wie du Ideen findest, Inhalte planst und Content produzierst, ohne ständig unter Druck zu stehen. Wir räumen mit dem Mythos auf, dass man jedem Trend nachjagen muss, um erfolgreich zu sein. Stattdessen arbeitest du mit klaren Formaten, smarten Workflows und gezieltem Einsatz von KI. Du wirst schneller, sicherer und deutlich wirksamer in deiner Kommunikation. Am Ende hast du nicht nur besseren Content – sondern ein Social Media Game, das du kontrollierst.</p>
-
-    <div class="sds-features">
-      <div class="sds-features-row">
-        <div class="sds-feature">
-          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-gruen.svg" alt="" class="sds-check">
-          <span>Klarer Content-Plan statt Ideenchaos</span>
-        </div>
-        <div class="sds-feature">
-          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-gruen.svg" alt="" class="sds-check">
-          <span>Effiziente Workflows für Social Media &amp; Online-Kanäle</span>
-        </div>
-        <div class="sds-feature">
-          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-gruen.svg" alt="" class="sds-check">
-          <span>Praxisnahe Umsetzung mit direktem Feedback</span>
-        </div>
-      </div>
-      <div class="sds-features-row">
-        <div class="sds-feature">
-          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-gruen.svg" alt="" class="sds-check">
-          <span>Content-Formate, die sichtbar machen und Vertrauen schaffen</span>
-        </div>
-        <div class="sds-feature">
-          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-gruen.svg" alt="" class="sds-check">
-          <span>KI-Prompt-Vorlagen für schnelle Planung der Content-Erstellung</span>
-        </div>
-        <div class="sds-feature">
-          <img src="<?php echo $img; ?>marketingsafari-aufzaehlungsicon-gruen.svg" alt="" class="sds-check">
-          <span>Inkl. Guidelines für die Contenterstellung mit dem Smartphone, Praxisanwendungen und Equipmentempfehlungen</span>
-        </div>
-      </div>
-    </div>
-
-    <p class="sds-meta">Max. 20 Teilnehmer | 4 Monate | € 4.000 | Start mehrmals pro Jahr</p>
-
-    <div class="sds-form-box sds-form-green">
-      <h3 class="sds-form-heading">Danach erhältst du einen Link um dir ein kostenloses Info-Gespräch zu vereinbaren.</h3>
-      <form class="sds-form" action="#" method="post">
-        <div class="sds-form-grid">
-          <div class="sds-field">
-            <label>Vorname*</label>
-            <input type="text" name="vorname" placeholder="Max" required>
-          </div>
-          <div class="sds-field">
-            <label>Nachname*</label>
-            <input type="text" name="nachname" placeholder="Mustermann" required>
-          </div>
-          <div class="sds-field">
-            <label>Unternehmen*</label>
-            <input type="text" name="unternehmen" placeholder="Musterunternehmen" required>
-          </div>
-          <div class="sds-field">
-            <label>E-Mail*</label>
-            <input type="email" name="email" placeholder="max@unternehmen.at" required>
-          </div>
-          <div class="sds-field">
-            <label>Telefon*</label>
-            <input type="tel" name="telefon" placeholder="+43 664 123 456 789" required>
-          </div>
-          <div class="sds-field">
-            <label>Geplantes monatliches Werbebudget</label>
-            <input type="text" name="budget" placeholder="30.000 €">
-          </div>
-        </div>
-        <div class="sds-field sds-field-full">
-          <label>Erzähle uns mehr von dir, deiner Idee oder deinem Unternehmen</label>
-          <textarea name="message" placeholder="Erzähl uns etwas über dich und dein Projekt ..."></textarea>
-        </div>
-        <div class="sds-checkbox-row">
-          <input type="checkbox" id="privacy-ccs" name="privacy" required>
-          <label for="privacy-ccs">Ich habe die Datenschutzerklärung gelesen und stimme dieser zu.</label>
-        </div>
-        <button type="submit" class="sds-submit">Anfrage absenden</button>
-      </form>
-    </div>
-
-  </div>
-</section>
+<?php foreach ($safari_detail_sections as $detail_section) : ?>
+  <?php get_template_part('template-parts/sections/safari-detail-section', null, $detail_section); ?>
+<?php endforeach; ?>
 
 <!-- Warum es Marketing Safari gibt -->
 <section class="warum-section">

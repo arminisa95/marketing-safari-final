@@ -34,6 +34,16 @@ a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 button { cursor: pointer; border: none; background: none; font-family: inherit; }
 
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-accent-orange: #FF7B29;
+  --color-accent-green: #77E7AC;
+  --color-accent-yellow: #FFEF5F;
+  --color-accent-cyan: #71E7FF;
+  --content-pad-x: clamp(20px, 5.22vw, 100px);
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -812,7 +822,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* Referenzen */
 .referenzen-block {
   padding-top: clamp(60px, 6.875vw, 132px);
-  padding-bottom: clamp(60px, 11.77vw, 226px);
+  padding-bottom: clamp(28px, 4.17vw, 80px);
 }
 
 .referenzen-lead {
@@ -859,26 +869,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-top: clamp(20px, 2.08vw, 40px);
 }
 
-.referenzen-group9-captions {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: clamp(8px, 0.78vw, 15px);
-  margin-top: clamp(4px, 0.26vw, 5px);
-}
-.referenzen-group9-caption p {
-  font-family: 'Gibson', sans-serif;
-  font-weight: 400;
-  font-size: clamp(13px, 1.302vw, 25px);
-  line-height: 1.2;
-  letter-spacing: 0.05em;
-  color: #000000;
-  margin: 0;
-}
-
 /* Safari detail sections (OMS + CCS) */
 .sds-section {
-  background: #000;
-  color: #fff;
+  background: var(--color-black);
+  color: var(--color-white);
 }
 .sds-inner {
   padding: clamp(36px, 2.81vw, 54px) clamp(20px, 4.65vw, 89px) clamp(36px, 2.81vw, 54px) clamp(20px, 4.93vw, 95px);
@@ -978,8 +972,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: clamp(24px, 3.02vw, 58px) clamp(20px, 8.125vw, 156px) clamp(36px, 4.69vw, 90px) clamp(20px, 7.29vw, 140px);
   box-sizing: border-box;
 }
-.sds-form-orange { background: #FF7B29; }
-.sds-form-green  { background: #77E7AC; }
+.sds-form-orange { background: var(--color-accent-orange); }
+.sds-form-green  { background: var(--color-accent-green); }
 
 .sds-form-heading {
   font-family: 'Gibson', sans-serif;
@@ -1085,8 +1079,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* Warum es Marketing Safari gibt */
 .warum-section {
-  background: #FFFFFF;
-  padding: clamp(44px, 4.48vw, 86px) clamp(20px, 5.22vw, 100px) clamp(72px, 6.25vw, 120px);
+  background: var(--color-white);
+  padding: clamp(44px, 4.48vw, 86px) var(--content-pad-x) clamp(72px, 6.25vw, 120px);
 }
 
 .warum-content {
@@ -1262,7 +1256,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* Unser Anspruch */
 .anspruch-section {
-  background: #FFFFFF;
+  background: var(--color-white);
   padding: clamp(40px, 4.17vw, 80px) 0 0;
 }
 
@@ -1310,10 +1304,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .anspruch-stripe:last-child { border-bottom: 2px solid #000; }
 
-.anspruch-yellow { background: #FFEF5F; }
-.anspruch-green  { background: #77E7AC; }
-.anspruch-orange { background: #FF7B29; }
-.anspruch-cyan   { background: #71E7FF; }
+.anspruch-yellow { background: var(--color-accent-yellow); }
+.anspruch-green  { background: var(--color-accent-green); }
+.anspruch-orange { background: var(--color-accent-orange); }
+.anspruch-cyan   { background: var(--color-accent-cyan); }
 
 .anspruch-stripe span {
   font-family: 'Instrument Serif', Georgia, serif;
@@ -1512,34 +1506,52 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .safaris-section { padding: 60px 0 80px; }
   .safaris-section .container { padding: 0 20px; }
   .safaris-heading { line-height: 1.05; margin-bottom: 14px; }
+  .safaris-intro { overflow-wrap: anywhere; }
   .safari-cards { flex-direction: column; gap: 24px; }
   .safari-card { padding: 24px 20px 32px; }
+  .safari-card-title { font-size: clamp(26px, 8vw, 42px); line-height: 0.95; }
   .safari-card-btns { flex-direction: column; }
   .btn-safari-primary, .btn-safari-secondary { text-align: center; justify-content: center; }
 
   /* SDS section mobile */
+  .sds-inner { padding: 32px 20px; }
+  .sds-form-box { padding: 24px 20px 28px; border-radius: 20px; }
+  .sds-form-heading { margin-bottom: 16px; }
   .sds-features-row { grid-template-columns: 1fr; }
   .sds-form-grid { grid-template-columns: 1fr; }
+  .sds-feature span { overflow-wrap: anywhere; }
   .sds-title-row { align-items: flex-start; gap: 12px; }
+  .sds-checkbox-row { align-items: flex-start; }
+  .sds-checkbox-row label { line-height: 1.25; }
 
   /* Gallery nav mobile */
   .gallery-nav { padding: 24px 20px 48px; }
+  .gallery3-section { padding: 48px 20px 0; }
 
   /* Warum section mobile */
   .warum-heading-row { flex-direction: column; align-items: flex-start; }
-  .warum-body { margin-bottom: 20px; }
+  .warum-body { margin-bottom: 20px; overflow-wrap: anywhere; }
   .warum-sub { margin-bottom: 32px; }
   .warum-cols { flex-direction: column; gap: 20px; }
   .warum-col { border-right: none; border-bottom: 2px solid #000; padding-bottom: 20px; width: 100%; }
   .warum-col:last-child { border-bottom: none; padding-bottom: 0; }
+  .warum-col p { overflow-wrap: anywhere; }
 }
 
 @media (max-width: 600px) {
   .hero-heading { font-size: 28px; }
+  .hero-nav-pill { font-size: 13px; padding: 6px 10px; }
+  .sds-submit { width: 100%; max-width: 100%; }
   .impressions-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: 1fr; }
   .footer-main { flex-direction: column; gap: 28px; }
   .footer-logo-col { flex: none; width: 180px; }
   .footer-bottom-bar { flex-direction: column; gap: 16px; text-align: center; }
   .booking-card { padding: 28px 18px; }
+}
+
+@media (max-width: 480px) {
+  .process-step-label { font-size: clamp(14px, 5.2vw, 22px); }
+  .process-step-inner { padding: 10px 12px; }
+  .sds-form-grid { row-gap: 12px; }
 }
