@@ -253,19 +253,57 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    ============================================= */
 .text-intro-section {
   background: #fff;
-  padding: 120px 0;
+  padding: 120px 0 100px;
 }
 .text-intro-section .container {
-  max-width: 900px;
+  max-width: none;
+  padding: 0 5%;
 }
-.text-intro-section p {
+/* Single continuous text block — Gibson 45px / line-height 55px */
+.intro-text {
   font-family: 'Gibson', sans-serif;
-  font-size: clamp(18px, 1.8vw, 28px);
+  font-size: clamp(18px, 2.34vw, 45px);
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.22;
+  letter-spacing: 0.05em;
+  color: #000;
+  margin-bottom: 0;
+}
+
+/* ── Three-column features below text ── */
+.intro-features {
+  display: flex;
+  align-items: flex-start;
+  margin-top: clamp(48px, 6vw, 100px);
+}
+.intro-feature {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 clamp(24px, 3.5vw, 60px);
+}
+.intro-feature:first-child {
+  padding-left: 0;
+}
+.intro-feature:not(:first-child) {
+  border-left: 1px solid rgba(0,0,0,0.18);
+}
+.intro-feature-icon {
+  width: clamp(44px, 4.2vw, 64px);
+  height: clamp(44px, 4.2vw, 64px);
+  display: block;
+  margin-bottom: clamp(12px, 1.5vw, 24px);
+}
+.intro-feature-label {
+  display: block;
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: clamp(18px, 2.34vw, 45px);
+  font-weight: 400;
+  line-height: 1.11;
+  letter-spacing: 0.05em;
   color: #000;
 }
-.text-intro-section p + p { margin-top: 1.2em; }
 
 /* =============================================
    INTRO SECTION
@@ -566,8 +604,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
   /* Text intro */
   .text-intro-section { padding: 60px 0; }
-  .text-intro-section .container { max-width: 100%; }
-  .text-intro-section p { font-size: clamp(16px, 4.5vw, 22px); }
+  .text-intro-section .container { max-width: 100%; padding: 0 20px; }
+  .intro-text { font-size: clamp(16px, 4.5vw, 24px); }
+
+  /* Features: stack on mobile */
+  .intro-features { flex-direction: column; gap: 32px; margin-top: 48px; }
+  .intro-feature { padding: 0; padding-top: 32px; border-left: none; border-top: 1px solid rgba(0,0,0,0.15); }
+  .intro-feature:first-child { border-top: none; padding-top: 0; }
+  .intro-feature-label { font-size: clamp(18px, 5vw, 28px); }
 }
 
 @media (max-width: 600px) {
