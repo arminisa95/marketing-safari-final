@@ -382,4 +382,38 @@
   </div>
 </section>
 
+<!-- ══════════════════════════════════════════
+     WARUM ES MARKETING SAFARI GIBT SECTION
+     Figma canvas 1920px · top 11275.77px
+     ══════════════════════════════════════════ -->
+<section class="warum-section">
+  <div class="warum-content">
+
+    <div class="warum-heading-row">
+      <h2 class="warum-heading">Warum es<br><em>Marketing Safari</em> gibt</h2>
+      <img src="<?php echo $img; ?>marketingsafari-icon-papagei-gruen.svg" alt="" class="warum-parrot">
+    </div>
+
+    <p class="warum-body">Wir lieben Agenturarbeit. Seit über 14 Jahren gestalten wir bei Plappermaul Marken, Kampagnen und digitale Strategien für über 400 Kunden. Wir tauchen tief ein, denken mit und setzen um. Aber wir wissen auch: Es gibt Phasen, in denen es strategisch sinnvoller ist, Marketing selbst im Unternehmen aufzubauen.</p>
+
+    <h3 class="warum-sub">Zum Beispiel, wenn ...</h3>
+
+    <div class="warum-cols">
+      <div class="warum-col">
+        <p>du neu gegründet hast und dein Marketing selbst verstehen und steuern möchtest</p>
+      </div>
+      <div class="warum-col">
+        <p>du eine interne Marketingstelle oder Abteilung aufbauen willst</p>
+      </div>
+      <div class="warum-col">
+        <p>Content Creation &amp; Online Marketing langfristig im Unternehmen verankert sein sollen</p>
+      </div>
+      <div class="warum-col">
+        <p>dein Geschäftsmodell so speziell ist, dass internes Know-how entscheidend ist</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <?php get_footer(); ?>

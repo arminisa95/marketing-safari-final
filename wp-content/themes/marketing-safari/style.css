@@ -1047,6 +1047,98 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .sds-submit:hover { opacity: 0.8; }
 
 /* =============================================
+   WARUM ES MARKETING SAFARI GIBT SECTION
+   Figma canvas 1920px · top 11275.77px
+   ============================================= */
+.warum-section {
+  background: #FFFFFF;
+  padding: clamp(40px, 4.17vw, 80px) clamp(20px, 5.22vw, 100px) clamp(30px, 3.125vw, 60px);
+}
+
+.warum-content {
+  width: 100%;
+}
+
+/* Heading row: h2 + parrot icon side by side */
+.warum-heading-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: clamp(20px, 2.08vw, 40px);
+}
+
+/* H2: Gibson 82.56px / line-height 77.08px (ratio 0.934) */
+.warum-heading {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(32px, 4.3vw, 82.56px);
+  line-height: 0.934;
+  color: #000000;
+}
+
+/* "Marketing Safari" → Instrument Serif italic */
+.warum-heading em {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Green parrot icon: 88px */
+.warum-parrot {
+  width: clamp(44px, 4.58vw, 88px);
+  flex-shrink: 0;
+}
+
+/* Body: Gibson 35px / lh 40px / ls 0.05em */
+.warum-body {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(15px, 1.823vw, 35px);
+  line-height: 1.143;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: clamp(12px, 1.25vw, 24px);
+}
+
+/* "Zum Beispiel, wenn ..." — same size as body */
+.warum-sub {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(15px, 1.823vw, 35px);
+  line-height: 1.143;
+  color: #000000;
+  margin-bottom: clamp(20px, 2.083vw, 40px);
+}
+
+/* 4-column layout: flex row, gap 50px, right borders on first 3 */
+.warum-cols {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: clamp(20px, 2.604vw, 50px);
+}
+
+.warum-col {
+  flex: 1;
+  border-right: 2px solid #000;
+}
+
+.warum-col:last-child {
+  border-right: none;
+}
+
+/* Column text: Gibson 25px / lh 30px / ls 0.05em */
+.warum-col p {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 1.302vw, 25px);
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+/* =============================================
    RESPONSIVE
    ============================================= */
 @media (max-width: 1200px) {
@@ -1195,6 +1287,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .sds-features-row { grid-template-columns: 1fr; }
   .sds-form-grid { grid-template-columns: 1fr; }
   .sds-title-row { align-items: flex-start; gap: 12px; }
+
+  /* Warum section mobile */
+  .warum-heading-row { flex-direction: column; align-items: flex-start; }
+  .warum-cols { flex-direction: column; gap: 20px; }
+  .warum-col { border-right: none; border-bottom: 2px solid #000; padding-bottom: 20px; width: 100%; }
+  .warum-col:last-child { border-bottom: none; padding-bottom: 0; }
 }
 
 @media (max-width: 600px) {
