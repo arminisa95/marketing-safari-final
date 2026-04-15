@@ -135,7 +135,7 @@
      ══════════════════════════════════════════ -->
 <section class="safari-process-section" id="safari">
 
-  <div class="container">
+  <div class="process-content">
     <h2 class="process-heading">So läuft deine <em>Safari</em> ab:</h2>
     <p class="process-subheading">Geführt, strukturiert &amp; auf Augenhöhe – mit ein paar wilden Überraschungen und jeder Menge Inspiration.</p>
     <p class="process-intro">Marketing ist keine einmalige Aktion, sondern eine Reise. Eine Reise, die Klarheit schafft, den Blick schärft und zeigt, welcher Weg wirklich zu deinem Unternehmen passt. Auf der Marketing Safari bist du nicht allein unterwegs: Du wirst begleitet, gefordert und unterstützt – Schritt für Schritt, Station für Station.</p>
@@ -183,6 +183,12 @@
       </div>
     </div>
 
+  </div>
+
+  <div class="process-content referenzen-block">
+    <h2 class="process-heading">Referenzen aus der Praxis</h2>
+    <p class="referenzen-lead">Die Projekte, die wir hier zeigen, haben wir in den vergangenen Jahren als Agentur Plappermaul umgesetzt und begleitet. Sie stehen für echte Herausforderungen, echte Unternehmen und messbare Ergebnisse – nicht für Theorie oder Testcases.</p>
+    <p class="referenzen-body">Da die Nachfrage nach unserem Know-how stetig wächst, haben wir uns entschieden, dieses Wissen nicht mehr nur punktuell als Agenturleistung anzubieten. Mit Marketing Safari machen wir unsere Erfahrung erstmals in einem strukturierten Coaching-Programm für eine breitere Zielgruppe zugänglich. Damit du von dem profitierst, was sich in der Praxis hundertfach bewährt hat.</p>
   </div>
 
 </section>

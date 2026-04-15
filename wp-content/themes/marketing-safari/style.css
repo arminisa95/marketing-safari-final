@@ -651,10 +651,17 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* =============================================
    SAFARI PROCESS SECTION — "So läuft deine Safari ab:"
+   Figma canvas: 1920px. All vw values derived from exact pixel positions.
    ============================================= */
 .safari-process-section {
   background: #fff;
   padding-top: clamp(60px, 5.5vw, 106px);
+}
+
+/* Full-bleed content wrapper: left 100.2px / 1920 = 5.22%, right ~100px / 1920 = 5.21% */
+.process-content {
+  padding-left: clamp(20px, 5.22vw, 100px);
+  padding-right: clamp(20px, 5.21vw, 100px);
 }
 
 .process-heading {
@@ -663,7 +670,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-size: clamp(36px, 4.3vw, 82.5px);
   line-height: 0.935;
   color: #000;
-  margin-bottom: clamp(16px, 1.5vw, 28px);
+  margin-bottom: clamp(14px, 1.46vw, 28px);
 }
 .process-heading em {
   font-family: 'Instrument Serif', Georgia, serif;
@@ -671,51 +678,48 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-weight: 400;
 }
 
+/* Figma: 35px / line-height 40px / letter-spacing 0.05em */
 .process-subheading {
   font-family: 'Gibson', sans-serif;
   font-weight: 400;
   font-size: clamp(16px, 1.82vw, 35px);
-  line-height: 1.14;
+  line-height: 1.143;
   letter-spacing: 0.05em;
   color: #000;
-  max-width: 900px;
-  margin-bottom: clamp(14px, 1.4vw, 26px);
+  margin-bottom: clamp(12px, 1.25vw, 24px);
 }
 
+/* Figma: 25px / line-height 30px. Bottom gap to rows: 87px → 4.53vw */
 .process-intro {
   font-family: 'Gibson', sans-serif;
   font-weight: 400;
-  font-size: clamp(13px, 1.3vw, 25px);
+  font-size: clamp(13px, 1.302vw, 25px);
   line-height: 1.2;
   color: #000;
-  max-width: 860px;
-  margin-bottom: clamp(40px, 4.5vw, 87px);
+  margin-bottom: clamp(40px, 4.53vw, 87px);
 }
 
-/* Full-width steps wrapper */
+/* Full-width steps wrapper — top border = Vector 18 */
 .process-steps {
   width: 100%;
   border-top: 2px solid #000;
 }
 
-/* Each colored row */
+/* Each colored row — ALL rows have bottom border (Vectors 13–17 in Figma) */
 .process-step {
   width: 100%;
   border-bottom: 2px solid #000;
 }
-.process-step:last-child {
-  border-bottom: none;
-}
 
-/* Inner row: mirrors container width/alignment, flex layout */
+/* Inner row: full-bleed padding matching Figma badge/arrow positions.
+   Badge left: 91.07px / 1920 = 4.74%  |  Arrow right edge: 132px / 1920 = 6.875%
+   Vertical: (94px row − 57.73px badge) / 2 = 18.14px → 18px */
 .process-step-inner {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: clamp(14px, 0.94vw, 18px) 60px;
+  padding: clamp(12px, 0.945vw, 18px) clamp(20px, 6.875vw, 132px) clamp(12px, 0.945vw, 18px) clamp(20px, 4.74vw, 91px);
   display: flex;
   align-items: center;
-  gap: clamp(14px, 1.46vw, 28px);
+  gap: clamp(16px, 2.096vw, 40px);
 }
 
 /* Row background colors */
@@ -725,41 +729,71 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .process-step--4 { background: #C29AFF; }
 .process-step--5 { background: #71E7FF; }
 
-/* Black circle number badge */
+/* Black circle: Figma 57.73×56.94px, number Gibson 500 32.84px */
 .process-step-num {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: clamp(40px, 3vw, 58px);
-  height: clamp(40px, 3vw, 58px);
+  width: clamp(36px, 3.007vw, 57.73px);
+  height: clamp(36px, 3.007vw, 57.73px);
   flex-shrink: 0;
   background: #000;
   border-radius: 50%;
   font-family: 'Gibson', sans-serif;
   font-weight: 500;
-  font-size: clamp(16px, 1.71vw, 33px);
+  font-size: clamp(14px, 1.71vw, 32.84px);
   line-height: 1;
   color: #fff;
   text-align: center;
 }
 
-/* Step label: Instrument Serif */
+/* Step label: Instrument Serif 45px / line-height 50px / letter-spacing 0.05em */
 .process-step-label {
   flex: 1;
   font-family: 'Instrument Serif', Georgia, serif;
   font-style: normal;
   font-weight: 400;
-  font-size: clamp(20px, 2.34vw, 45px);
-  line-height: 1.11;
+  font-size: clamp(18px, 2.34vw, 45px);
+  line-height: 1.111;
   letter-spacing: 0.05em;
   color: #000;
 }
 
-/* Arrow icon */
+/* Arrow: 44px wide matching Figma vector group */
 .process-step-arrow {
-  width: clamp(24px, 2.34vw, 45px);
+  width: clamp(24px, 2.292vw, 44px);
   height: auto;
   flex-shrink: 0;
+}
+
+/* ── Referenzen aus der Praxis ─────────────────
+   Gap after rows: 168px / 1920 = 8.75vw
+   ─────────────────────────────────────────── */
+.referenzen-block {
+  padding-top: clamp(60px, 8.75vw, 168px);
+  padding-bottom: clamp(60px, 5vw, 96px);
+}
+
+/* "Die Projekte..." — Gibson 35px / line-height 40px / letter-spacing 0.05em
+   Gap after heading: 29px */
+.referenzen-lead {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(16px, 1.82vw, 35px);
+  line-height: 1.143;
+  letter-spacing: 0.05em;
+  color: #000;
+  margin-top: clamp(16px, 1.51vw, 29px);
+  margin-bottom: clamp(24px, 2.39vw, 46px);
+}
+
+/* "Da die Nachfrage..." — Gibson 25px / line-height 30px */
+.referenzen-body {
+  font-family: 'Gibson', sans-serif;
+  font-weight: 400;
+  font-size: clamp(13px, 1.302vw, 25px);
+  line-height: 1.2;
+  color: #000;
 }
 
 /* =============================================
@@ -767,7 +801,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    ============================================= */
 @media (max-width: 1200px) {
   .container { padding: 0 40px; }
-  .process-step-inner { max-width: 100%; padding-left: 40px; padding-right: 40px; }
+  .process-content { padding-left: clamp(20px, 3.33vw, 40px); padding-right: clamp(20px, 3.33vw, 40px); }
 }
 
 /* ── Tablet: 769–1024px — layout holds, fonts scale via vw ── */
@@ -891,8 +925,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
   /* Safari process section */
   .safari-process-section { padding-top: 48px; }
-  .process-step-inner { padding: 14px 20px; gap: 12px; }
-  .process-step-label { letter-spacing: 0; }
+  .process-content { padding-left: 20px; padding-right: 20px; }
+  .process-step-inner { padding: 12px 20px; gap: 10px; }
+  .process-step-label { letter-spacing: 0; font-size: clamp(16px, 4.5vw, 28px); }
+  .process-step-num { width: 36px; height: 36px; font-size: 16px; }
+  .process-step-arrow { width: 24px; }
 
   /* Safaris section */
   .safaris-section { padding: 60px 0 80px; }
