@@ -1219,6 +1219,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     padding-top: 88px;
   }
 
+  .sds-section + .sds-section .sds-inner {
+    padding-top: 100px;
+  }
+
   .sds-section:last-of-type .sds-inner {
     padding-bottom: 92px;
   }
@@ -1231,6 +1235,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 @media (min-width: 1440px) {
   .sds-inner {
     padding-top: 100px;
+  }
+
+  .sds-section + .sds-section .sds-inner {
+    padding-top: 112px;
   }
 
   .sds-section:last-of-type .sds-inner {
