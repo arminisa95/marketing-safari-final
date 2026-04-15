@@ -253,7 +253,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    ============================================= */
 .text-intro-section {
   background: #fff;
-  padding: 120px 0 100px;
+  padding: 120px 0 70px;
 }
 .text-intro-section .container {
   max-width: none;
@@ -274,7 +274,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .intro-features {
   display: flex;
   align-items: flex-start;
-  margin-top: clamp(48px, 6vw, 100px);
+  margin-top: clamp(60px, 12vw, 220px);
 }
 .intro-feature {
   flex: 1;
