@@ -714,7 +714,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* Each colored row — ALL rows have bottom border (Vectors 13–17 in Figma) */
 .process-step {
   width: 100%;
+  height: 94px;
   border-bottom: 2px solid #000;
+  box-sizing: border-box;
 }
 
 /* Inner row: full-bleed padding matching Figma badge/arrow positions.
@@ -722,7 +724,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    Vertical: (94px row − 57.73px badge) / 2 = 18.14px → 18px */
 .process-step-inner {
   width: 100%;
-  padding: clamp(12px, 0.945vw, 18px) clamp(20px, 6.875vw, 132px) clamp(12px, 0.945vw, 18px) clamp(20px, 4.74vw, 91px);
+  height: 100%;
+  padding: 0 clamp(20px, 6.875vw, 132px) 0 clamp(20px, 4.74vw, 91px);
   display: flex;
   align-items: center;
   gap: clamp(16px, 2.096vw, 40px);
@@ -1114,7 +1117,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   /* Safari process section */
   .safari-process-section { padding-top: 48px; }
   .process-content { padding-left: 20px; padding-right: 20px; }
-  .process-step-inner { padding: 12px 20px; gap: 10px; }
+  .process-step { height: auto; min-height: 64px; }
+  .process-step-inner { padding: 12px 20px; gap: 10px; height: auto; }
   .process-step-label { letter-spacing: 0; font-size: clamp(16px, 4.5vw, 28px); }
   .process-step-num { width: 36px; height: 36px; font-size: 16px; }
   .process-step-arrow { width: 24px; }
