@@ -1200,12 +1200,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   }
 
   .warum-cols {
-    min-height: 194px;
+    min-height: auto;
   }
 
   .warum-col {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    min-height: clamp(96px, 6.6vw, 126px);
+    padding-top: clamp(6px, 0.52vw, 10px);
+    padding-bottom: clamp(6px, 0.52vw, 10px);
   }
 
   .warum-col:nth-child(1) p { max-width: 342px; }
