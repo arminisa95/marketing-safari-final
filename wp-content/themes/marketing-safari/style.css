@@ -937,12 +937,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ── Form box (orange or green) ── */
-/* Figma: 1737px wide, 94px left margin, padding 58t 156r 90b 140l */
+/* Figma: inner padding 58t 156r 90b 140l · form fills padded .sds-inner (100%) */
 .sds-form-box {
   border-radius: 26px;
-  width: clamp(300px, 90.47vw, 1737px);
-  margin-left: clamp(20px, 4.9vw, 94px);
-  padding: clamp(28px, 3.02vw, 58px) clamp(20px, 8.125vw, 156px) clamp(40px, 4.69vw, 90px) clamp(20px, 7.29vw, 140px);
+  padding: clamp(24px, 3.02vw, 58px) clamp(20px, 8.125vw, 156px) clamp(36px, 4.69vw, 90px) clamp(20px, 7.29vw, 140px);
   box-sizing: border-box;
 }
 .sds-form-orange { background: #FF7B29; }
