@@ -891,7 +891,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: clamp(36px, 2.81vw, 54px) clamp(20px, 4.65vw, 89px) clamp(36px, 2.81vw, 54px) clamp(20px, 4.93vw, 95px);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 900px) {
   .sds-title-row,
   .sds-body,
   .sds-features,
