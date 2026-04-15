@@ -1191,7 +1191,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     padding-top: clamp(72px, 5.21vw, 100px);
   }
 
-  .sds-section:last-of-type .sds-inner {
+  .sds-section + .sds-section .sds-inner {
     padding-bottom: clamp(72px, 5.21vw, 100px);
   }
 
@@ -1223,12 +1223,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     padding-top: 100px;
   }
 
-  .sds-section:last-of-type .sds-inner {
-    padding-bottom: 92px;
+  .sds-section + .sds-section .sds-inner {
+    padding-bottom: 100px;
   }
 
   .warum-section {
-    padding-top: 86px;
+    padding-top: 100px;
   }
 }
 
@@ -1241,7 +1241,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     padding-top: 112px;
   }
 
-  .sds-section:last-of-type .sds-inner {
+  .sds-section + .sds-section .sds-inner {
     padding-bottom: 100px;
   }
 
