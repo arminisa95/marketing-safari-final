@@ -141,7 +141,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   z-index: 20;
 }
 
-/* ── Nav pills: top 35.75/1080=3.31%, right 103.66/1131=9.17% of overlay ── */
+/* ── Nav: top 35.75/1080=3.31%, right 103.66/1131=9.17% of overlay ── */
 .hero-nav {
   position: absolute;
   top: 3.31%;

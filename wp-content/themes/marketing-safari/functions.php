@@ -38,13 +38,23 @@ function ms_image_url($file_name = '') {
 
 function ms_content($key, $default = '') {
     if (function_exists('get_field')) {
-        $acf_value = get_field($key);
+        $acf_value = get_field($key, 'option');
         if ($acf_value !== null && $acf_value !== false && $acf_value !== '') {
             return $acf_value;
         }
     }
 
     return get_theme_mod($key, $default);
+}
+
+if (function_exists('acf_add_options_page')) {
+    acf_add_options_page([
+        'page_title' => 'Website Inhalte',
+        'menu_title' => 'Website Inhalte',
+        'menu_slug'  => 'ms-options',
+        'capability' => 'edit_posts',
+        'redirect'   => false,
+    ]);
 }
 
 add_action('wp_enqueue_scripts', function() {
